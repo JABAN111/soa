@@ -1,0 +1,14 @@
+services:
+  agency_database:
+    image: postgres:18
+    container_name: agency_db
+    restart: unless-stopped
+    ports:
+      - "5555:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    volumes:
+      - agency:/var/lib/postgresql/data
+volumes:
+  agency:
