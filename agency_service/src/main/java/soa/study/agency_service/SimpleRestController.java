@@ -7,14 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 public class SimpleRestController {
-
-//    private ModelRepository modelRepository;
-
+    private ModelRepository modelRepository;
     @GetMapping("/data")
     public String data() {
-//        var m = new Model();
-//        m.setName("cool");
-//        modelRepository.save(m);
+        var m = new Model();
+        m.setName("hate payara");
+        modelRepository.save(m);
         return "hello world";
     }
 }
