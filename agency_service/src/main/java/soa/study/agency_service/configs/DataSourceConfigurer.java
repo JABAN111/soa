@@ -1,4 +1,4 @@
-package soa.study.agency_service;
+package soa.study.agency_service.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

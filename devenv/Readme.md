@@ -168,3 +168,11 @@ Now you can easily ping my application by this:
 ```bash
 curl http://localhost:8080/agency/data 
 ```
+
+P.S. you can try to install for idea debugger, but the biggest problem that glassfish for IDEa works only for jdk8, and payara ultimate tools working only with payara 5, so for the six version plain old debugging via prints:D
+[link to official guide](https://docs.payara.fish/community/docs/Technical%20Documentation/Ecosystem/IDE%20Integration/IntelliJ%20Plugin/Payara%20Server.html)
+
+
+---
+# Widlfly for spring boot
+1. Download 

@@ -1,4 +1,4 @@
-package soa.study.agency_service;
+package soa.study.agency_service.jpa.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

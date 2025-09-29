@@ -12,3 +12,7 @@ stop-paraya:
 	$(PAYARA_HOME)/bin/asadmin stop-domain domain1
 start-paraya:
 	$(PAYARA_HOME)/bin/asadmin start-domain domain1
+redeploy:
+	make build && make undeploy && make deploy
+get-docs:
+	$(PAYARA_HOME)/glassfish/domains/domain1/logs/server.log
