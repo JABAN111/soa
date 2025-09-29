@@ -2,6 +2,8 @@
 
 ## Payara for spring boot
 
+p.s. apparently adopted(stolen) from article: https://dzone.com/articles/work-in-progress-1
+
 1. Download zip and uncompress it. I will do it right in this folder
 ```bash
 wget https://repo1.maven.org/maven2/fish/payara/distributions/payara/6.2025.9/payara-6.2025.9.zip
@@ -117,4 +119,52 @@ public class AgencyServiceApplication extends SpringBootServletInitializer {
     }
 }
 ```
+8. Do not forget add to we agency_service/src/main/webapp
+bean.xml
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+       https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd"
+       version="3.0"
+       bean-discovery-mode="annotated">
+    <scan>
+        <exclude name="org.springframework.data.jpa.repository.cdi.**"/>
+    </scan>
+</beans>
+```
+glassfish-web.xml
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN" "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<glassfish-web-app error-url="">
+    <class-loader delegate="true"/>
+    <jsp-config>
+        <property name="keepgenerated" value="true">
+            <description>Keep a copy of the generated servlet class' java code.</description>
+        </property>
+    </jsp-config>
 
+    <!-- set a friendly context root -->
+    <context-root>/agency</context-root>
+
+    <!-- Change the default character encoding from ISO-8859-1 to UTF-8 -->
+    <parameter-encoding default-charset="UTF-8"/>
+</glassfish-web-app>
+```
+web.xml
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app metadata-complete="true"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+     http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+</web-app>
+```
+Now you can easily ping my application by this: 
+```bash
+curl http://localhost:8080/agency/data 
+```
