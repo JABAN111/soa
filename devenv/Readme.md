@@ -175,4 +175,10 @@ P.S. you can try to install for idea debugger, but the biggest problem that glas
 
 ---
 # Widlfly for spring boot
-1. Download 
+1. Download wildfly
+```bash
+wget https://github.com/wildfly/wildfly/releases/download/37.0.1.Final/wildfly-37.0.1.Final.zip
+unzip wildfly-37.0.1.Final.zip
+```
+
+2. Then 
