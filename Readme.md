@@ -1,6 +1,6 @@
-## Лабораторная работа по СОА
+## Laboratory work for SOA
 
-todo добавить задания
+todo add task
 
-# Инструкция по деплою wildfly && и payara для spring boot + spring boot можно найти тут
+# Instruction for deployment wildfly && payara for spring boot + spring boot you can find there
 [devenv](./devenv/Readme.md)
