@@ -16,3 +16,7 @@ redeploy:
 	make build && make undeploy && make deploy
 get-docs:
 	$(PAYARA_HOME)/glassfish/domains/domain1/logs/server.log
+health-ping:
+	curl http://localhost:8080/agency/health
+
+

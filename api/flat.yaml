@@ -1,0 +1,548 @@
+openapi: 3.0.0
+info:
+  title: Flat Management Service API
+  version: 1.0.0
+  description: |
+    Сервис для работы с Flat коллекцией. Содержит restfull API для управления коллекцией (CRUD и дополнительные операции).
+
+servers:
+  - url: http://se.ifmo.ru/api
+    description: Основной сервер API
+
+tags:
+  - name: CRUD Operations
+    description: Основные CRUD операции над коллекцией Flat
+  - name: Utility Operations
+    description: Специальные операции над коллекцией Flat
+
+components:
+  schemas:
+    Coordinates:
+      type: object
+      required:
+        - x
+        - y
+      properties:
+        x:
+          type: integer
+          maximum: 324
+          nullable: false
+          example: 100
+        y:
+          type: integer
+          maximum: 832
+          example: 500
+
+    House:
+      type: object
+      properties:
+        name:
+          type: string
+          nullable: true
+          example: "Sunshine Residence"
+        year:
+          type: integer
+          format: int64
+          minimum: 1
+          example: 2010
+        numberOfFloors:
+          type: integer
+          minimum: 1
+          nullable: true
+          example: 5
+
+    Furnish:
+      type: string
+      enum: [DESIGNER, NONE, BAD, LITTLE]
+      example: DESIGNER
+
+    Transport:
+      type: string
+      enum: [FEW, NONE, LITTLE, NORMAL]
+      nullable: true
+      example: NORMAL
+
+    Flat:
+      type: object
+      required:
+        - name
+        - coordinates
+        - area
+        - numberOfRooms
+        - numberOfBathrooms
+        - furnish
+      properties:
+        id:
+          type: integer
+          readOnly: true
+          minimum: 1
+          example: 42
+        name:
+          type: string
+          minLength: 1
+          example: "Luxury Apartment"
+        coordinates:
+          $ref: '#/components/schemas/Coordinates'
+        creationDate:
+          type: string
+          format: date
+          readOnly: true
+          example: "2023-10-01"
+        area:
+          type: integer
+          minimum: 1
+          example: 85
+        numberOfRooms:
+          type: integer
+          minimum: 1
+          example: 3
+        numberOfBathrooms:
+          type: integer
+          minimum: 1
+          example: 2
+        furnish:
+          $ref: '#/components/schemas/Furnish'
+        transport:
+          $ref: '#/components/schemas/Transport'
+        house:
+          $ref: '#/components/schemas/House'
+
+    FlatArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/Flat'
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+
+  parameters:
+    pageParam:
+      in: query
+      name: page
+      schema:
+        type: integer
+        minimum: 0
+        default: 0
+      description: Номер страницы
+    sizeParam:
+      in: query
+      name: size
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 10
+      description: Количество элементов
+
+paths:
+  /flats:
+    get:
+      tags:
+        - CRUD Operations
+      summary: Получить список квартир
+      description: |
+        Возвращает массив квартир с поддержкой фильтрации, сортировки и пагинации.
+        Фильтрация доступна по всем полям объекта Flat.
+        Примеры фильтрации:
+        - `/flats?sortId=desc` - квартиры отсортированные по id в обратном порядке
+        - `/flats?sortName=asc&sortTransport=NORMAL` - квартиры, отсортированные по названию и с транспортом типа NORMAL
+      parameters:
+        - $ref: '#/components/parameters/pageParam'
+        - $ref: '#/components/parameters/sizeParam'
+        - in: query
+          name: sortId
+          schema:
+            type: string
+          description: Сортировка по id
+        - in: query
+          name: idMin
+          schema:
+            type: integer
+          description: min id
+        - in: query
+          name: idMax
+          schema:
+            type: integer
+          description: max id
+        - in: query
+          name: sortName
+          schema:
+            type: string
+          description: Сортировка по name
+        - in: query
+          name: name
+          schema:
+            type: string
+          description: Фильтр по названию
+        - in: query
+          name: sortCoordinates
+          schema:
+            type: string
+          description: Сортировка по coordinates
+        - in: query
+          name: minX
+          schema:
+            type: integer
+          description: Фильтр по minX
+        - in: query
+          name: maxX
+          schema:
+            type: integer
+          description: Фильтр по maxX
+        - in: query
+          name: minY
+          schema:
+            type: integer
+          description: Фильтр по minY
+        - in: query
+          name: maxY
+          schema:
+            type: integer
+          description: Фильтр по maxY
+        - in: query
+          name: sortCreationDate
+          schema:
+            type: string
+          description: Сортировка по CreationDate
+        - in: query
+          name: minCreationDate
+          schema:
+            type: string
+          description: Фильтр по min CreationDate
+        - in: query
+          name: maxCreationDate
+          schema:
+            type: string
+          description: Фильтр по max CreationDate
+        - in: query
+          name: sortArea
+          schema:
+            type: string
+          description: Сортировка по area
+        - in: query
+          name: minArea
+          schema:
+            type: integer
+          description: Фильтр по minArea
+        - in: query
+          name: maxArea
+          schema:
+            type: integer
+          description: Фильтр по maxArea
+        - in: query
+          name: sortNumberOfRooms
+          schema:
+            type: string
+          description: "Сортировка по количеству комнат"
+        - in: query
+          name: minNumberOfRooms
+          schema:
+            type: integer
+          description: Фильтр по minNumberOfRooms
+        - in: query
+          name: maxNumberOfRooms
+          schema:
+            type: integer
+          description: Фильтр по maxNumberOfRooms
+
+        - in: query
+          name: sortFurnish
+          schema:
+            type: string
+          description: Сортировка по furnish. Принимает одно из значений enum.
+        - in: query
+          name: furnish
+          schema:
+            type: string
+          description: Фильтр по fursnish
+        - in: query
+          name: sortTransport
+          schema:
+            type: string
+          description: Сортировка по transport. Принимает одно из значений enum.
+        - in: query
+          name: transport
+          schema:
+            type: string
+          description: Фильтр по транспорту
+        - in: query
+          name: sortHouse
+          schema:
+            type: string
+          description: Сортировка по house
+
+
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FlatArray'
+        '400':
+          description: Неверные параметры запроса
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    post:
+      tags:
+        - CRUD Operations
+      summary: Добавить новую квартиру
+      description: |
+        Создает новую квартиру в коллекции.
+        Поля `id` и `creationDate` генерируются автоматически и игнорируются, если переданы.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Flat'
+            examples:
+              basicFlat:
+                summary: Пример передаваемого тела
+                value:
+                  name: "Cozy Studio"
+                  coordinates:
+                    x: 100
+                    y: 200
+                  area: 35
+                  numberOfRooms: 1
+                  numberOfBathrooms: 1
+                  furnish: "LITTLE"
+                  transport: "FEW"
+      responses:
+        '201':
+          description: Квартира успешно создана
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Flat'
+        '400':
+          description: Неверные данные квартиры
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /flats/{id}:
+    get:
+      tags:
+        - CRUD Operations
+      summary: Получить квартиру по ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          example: 42
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Flat'
+        '400':
+          description: Неверные данные квартиры
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Квартира не найдена
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    put:
+      tags:
+        - CRUD Operations
+      summary: Обновить квартиру
+      description: |
+        Полностью обновляет данные квартиры с указанным ID.
+        Поля `id` и `creationDate` не могут быть изменены.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          example: 42
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Flat'
+      responses:
+        '200':
+          description: Квартира успешно обновлена
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Flat'
+        '400':
+          description: Неверные данные квартиры
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Квартира не найдена
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    delete:
+      tags:
+        - CRUD Operations
+      summary: Удалить квартиру
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          example: 42
+      responses:
+        '204':
+          description: Квартира успешно удалена
+        '404':
+          description: Квартира не найдена
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+
+
+  /flats/utils/sum-rooms:
+    get:
+      tags:
+        - Utility Operations
+      summary: Сумма комнат во всех квартирах
+      description: Возвращает общее количество комнат во всех квартирах коллекции
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  totalRooms:
+                    type: integer
+                    example: 150
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /flats/utils/group-by-rooms:
+    get:
+      tags:
+        - Utility Operations
+      summary: Группировка по количеству комнат
+      description: Возвращает количество квартир для каждого значения numberOfRooms
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                example:
+                  1: 15
+                  2: 25
+                  3: 20
+                  4: 10
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /flats/utils/transport-greater-than/{value}:
+    get:
+      tags:
+        - Utility Operations
+      summary: Квартиры с транспортом лучше указанного
+      description: |
+        Возвращает массив квартир, значение поля transport которых лучше заданного.
+        Порядок качества транспорта: NONE =< FEW =< LITTLE =< NORMAL
+      parameters:
+        - in: path
+          name: value
+          required: true
+          schema:
+            $ref: '#/components/schemas/Transport'
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FlatArray'
+        '500':
+          description: Непредвиденная ошибка
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '400':
+          description: Неверное значение транспорта
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'

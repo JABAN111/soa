@@ -1,0 +1,118 @@
+openapi: 3.0.0
+info:
+  title: Agency Management API
+  version: 1.0.0
+  description: |
+    API дополнительных операций агентства недвижимости.
+    Сервис работает поверх Flat Management Service API.
+
+servers:
+  - url: http://se.ifmo.ru/api/agency
+    description: Основной сервер API
+
+tags:
+  - name: Agency Operations
+    description: Операции агентства недвижимости
+
+components:
+  schemas:
+    Flat:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 42
+        name:
+          type: string
+          example: "Luxury Apartment"
+        area:
+          type: integer
+          example: 85
+        numberOfRooms:
+          type: integer
+          example: 3
+        numberOfBathrooms:
+          type: integer
+          example: 2
+        price:
+          type: number
+          format: float
+          description: Расчетная стоимость квартиры
+          example: 150000.50
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+
+paths:
+  /get-most-expensive/{id1}/{id2}/{id3}:
+    get:
+      tags:
+        - Agency Operations
+      summary: Выбрать самую дорогую квартиру из трех
+      description: |
+        Сравнивает три квартиры с заданными ID и возвращает данные самой дорогой из них.
+      parameters:
+        - in: path
+          name: id1
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          example: 1
+        - in: path
+          name: id2
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          example: 2
+        - in: path
+          name: id3
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          example: 3
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Flat'
+        '404':
+          description: Одна или несколько квартир не найдены
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /get-total-cost:
+    get:
+      tags:
+        - Agency Operations
+      summary: Рассчитать суммарную стоимость всех квартир
+      description: |
+        Вычисляет суммарную стоимость всех квартир в коллекции.
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  totalCost:
+                    type: number
+                    format: float
+                    example: 2543670.80
+                  currency:
+                    type: string
+                    example: "USD"
