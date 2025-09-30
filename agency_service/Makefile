@@ -8,9 +8,9 @@ stop:
 	$(PAYARA_HOME)/bin/asadmin disable agency_service
 undeploy:
 	$(PAYARA_HOME)/bin/asadmin undeploy agency_service
-stop-paraya:
+stop-payara:
 	$(PAYARA_HOME)/bin/asadmin stop-domain domain1
-start-paraya:
+start-payara:
 	$(PAYARA_HOME)/bin/asadmin start-domain domain1
 redeploy:
 	make build && make undeploy && make deploy

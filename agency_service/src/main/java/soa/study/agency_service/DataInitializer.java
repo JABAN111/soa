@@ -8,7 +8,6 @@ import soa.study.agency_service.jpa.repository.FlatRepository;
 
 import java.util.List;
 
-// FIXME delete before pass
 @Component
 @RequiredArgsConstructor
 public class DataInitializer implements CommandLineRunner {
