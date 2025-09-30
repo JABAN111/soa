@@ -10,7 +10,6 @@ import soa.study.agency_service.jpa.domain.Flat;
 import soa.study.agency_service.service.FlatService;
 
 @RestController
-@RequestMapping("/api")
 @RequiredArgsConstructor
 public class AgencyController {
 
