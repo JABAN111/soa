@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import soa.study.agency_service.dto.ErrorResponse;
-import soa.study.agency_service.dto.TotalCostResponse;
+import soa.study.agency_service.rest.error.ErrorResponse;
+import soa.study.agency_service.rest.dto.TotalCostResponse;
 import soa.study.agency_service.jpa.domain.Flat;
 import soa.study.agency_service.service.FlatService;
 

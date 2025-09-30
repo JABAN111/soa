@@ -1,4 +1,4 @@
-package soa.study.agency_service.dto;
+package soa.study.agency_service.rest.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
