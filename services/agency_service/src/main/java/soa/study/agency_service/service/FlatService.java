@@ -25,9 +25,10 @@ public class FlatService {
             );
         }
 
-        return flats.stream()
-                .max(Comparator.comparing(Flat::getPrice))
-                .orElseThrow(() -> new IllegalStateException("Unable to find the most expensive flat"));
+        return flats.get(0);
+//        return flats.stream()
+//                .max(Comparator.comparing(Flat::getPrice))
+//                .orElseThrow(() -> new IllegalStateException("Unable to find the most expensive flat"));
     }
 
     public Float getTotalCost() {

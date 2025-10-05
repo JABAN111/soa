@@ -1,6 +1,7 @@
 package agency_service
 
 import (
+	"io"
 	"net/http"
 	"net/url"
 	"soa/util"
@@ -35,6 +36,10 @@ func TestGetTotalCost(t *testing.T) {
 	resp, err := httpCl.Do(req)
 	require.NoError(t, err)
 	require.Equal(t, http.StatusOK, resp.StatusCode)
+
+	body, err := io.ReadAll(resp.Body)
+	require.NoError(t, err)
+	t.Log(string(body))
 }
 
 func TestGetBiggestCost(t *testing.T) {

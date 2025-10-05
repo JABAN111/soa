@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Search, Home, Plus, Edit2, Trash2, Filter, ArrowUpDown, ChevronLeft, ChevronRight, DollarSign, BarChart3 } from 'lucide-react';
 
 const API_BASE = 'http://localhost:23210/flat_service/api';
-const AGENCY_BASE = 'http://localhost:8080/api/agency';
+const AGENCY_BASE = 'http://localhost:8080/agency';
 
 const FURNISH_LABELS = {
     DESIGNER: 'Дизайнерская',
