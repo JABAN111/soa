@@ -2,12 +2,14 @@ package soa.study.flat_service.rest;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import soa.study.flat_service.jpa.domain.Flat;
 import soa.study.flat_service.jpa.domain.Transport;
+import soa.study.flat_service.rest.dto.FlatDto;
 import soa.study.flat_service.service.FlatService;
 
 import java.util.List;
@@ -15,8 +17,9 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/flats")
 @RequiredArgsConstructor
+@Slf4j
 public class FlatController {
 
     private final FlatService flatService;
@@ -26,7 +29,6 @@ public class FlatController {
             @RequestParam Map<String, String> allParams,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
-
         if (size < 1 || size > 100) {
             size = 10;
         }
@@ -46,8 +48,8 @@ public class FlatController {
     }
 
     @PostMapping
-    public ResponseEntity<Flat> createFlat(@Valid @RequestBody Flat flat) {
-        Flat createdFlat = flatService.createFlat(flat);
+    public ResponseEntity<Flat> createFlat(@RequestBody FlatDto flat) {
+        Flat createdFlat = flatService.createFlat(flat.toEntity());
         return ResponseEntity.status(HttpStatus.CREATED).body(createdFlat);
     }
 

@@ -1,4 +1,4 @@
-WF_HOME=../devenv/wildfly-37.0.1.Final
+WF_HOME=../../devenv/wildfly-37.0.1.Final
 STANDALONEXML=$(WF_HOME)/standalone/configuration/standalone.xml
 
 deploy:
