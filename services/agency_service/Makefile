@@ -1,4 +1,4 @@
-PAYARA_HOME=../devenv/payara6
+PAYARA_HOME=../../devenv/payara6
 
 deploy:
 	$(PAYARA_HOME)/bin/asadmin deploy target/agency_service.war
