@@ -20,7 +20,6 @@ public class Flat {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Min(value = 1, message = "ID must be greater than 0")
     private Integer id;
 
     @NotBlank(message = "Name cannot be empty")
@@ -53,10 +52,6 @@ public class Flat {
     @Min(value = 1, message = "Number of bathrooms must be greater than 0")
     @Column(nullable = false)
     private Integer numberOfBathrooms;
-
-    @Min(value = 1, message = "Price must be greater than 0")
-    @Column
-    private Float price;
 
     @NotNull(message = "Furnish cannot be null")
     @Enumerated(EnumType.STRING)

@@ -25,7 +25,6 @@ public class AgencyController {
             Flat mostExpensive = flatService.getMostExpensiveFlat(id1, id2, id3);
             return ResponseEntity.ok(mostExpensive);
         } catch (IllegalArgumentException e) {
-            // TODO rewrite via RestAdvicer?
             ErrorResponse error = new ErrorResponse(
                     "NOT_FOUND",
                     e.getMessage()
@@ -36,7 +35,7 @@ public class AgencyController {
 
     @GetMapping("/get-total-cost")
     public ResponseEntity<TotalCostResponse> getTotalCost() {
-        Float totalCost = flatService.getTotalCost();
+        var totalCost = flatService.getTotalCost();
         TotalCostResponse response = new TotalCostResponse(totalCost);
         return ResponseEntity.ok(response);
     }

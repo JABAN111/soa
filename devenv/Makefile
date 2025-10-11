@@ -13,3 +13,7 @@ start-wildfly:
 
 start-all: # start payara && wildfly without building
 
+push-wildflyToHell:
+	tar --zstd -cf wf.tar.zst  wildfly-37.0.1.Final
+	scp -P 2222 soa.tar.zst s368601@se.ifmo.ru:~
+	hell

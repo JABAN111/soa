@@ -12,4 +12,5 @@ build:
 	mvn clean package -DskipTests
 redeploy:
 	make build && make deploy
-
+health-ping:
+	curl localhost:23210/flat_service/health

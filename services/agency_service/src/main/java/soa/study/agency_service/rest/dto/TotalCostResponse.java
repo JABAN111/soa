@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TotalCostResponse {
-    private Float totalCost;
+    private Double totalCost;
     private String currency;
 
-    public TotalCostResponse(Float totalCost) {
+    public TotalCostResponse(Double totalCost) {
         this.totalCost = totalCost;
         this.currency = "USD";
     }

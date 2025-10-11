@@ -34,11 +34,6 @@ components:
         numberOfBathrooms:
           type: integer
           example: 2
-        price:
-          type: number
-          format: float
-          description: Расчетная стоимость квартиры
-          example: 150000.50
 
     ErrorResponse:
       type: object
