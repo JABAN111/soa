@@ -1,6 +1,6 @@
 spring:
   application.name:
-    flat_service
+    agency_service
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
