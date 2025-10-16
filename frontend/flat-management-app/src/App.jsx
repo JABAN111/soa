@@ -25,12 +25,10 @@ const App = () => {
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
 
-    // Pagination
     const [page, setPage] = useState(0);
     const [size, setSize] = useState(10);
     const [totalPages, setTotalPages] = useState(0);
 
-    // Filters
     const [filters, setFilters] = useState({
         name: '',
         minArea: '',
@@ -45,7 +43,6 @@ const App = () => {
         maxY: ''
     });
 
-    // Sorting
     const [sorting, setSorting] = useState({
         sortId: '',
         sortName: '',
@@ -53,7 +50,6 @@ const App = () => {
         sortNumberOfRooms: ''
     });
 
-    // Form data
     const [formData, setFormData] = useState({
         name: '',
         coordinates: { x: '', y: '' },
