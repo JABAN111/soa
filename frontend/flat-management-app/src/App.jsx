@@ -40,14 +40,21 @@ const App = () => {
         minX: '',
         maxX: '',
         minY: '',
-        maxY: ''
+        maxY: '',
+        minCreationDate: '',
+        maxCreationDate: ''
     });
 
     const [sorting, setSorting] = useState({
         sortId: '',
         sortName: '',
         sortArea: '',
-        sortNumberOfRooms: ''
+        sortNumberOfRooms: '',
+        sortCoordinates: '',
+        sortCreationDate: '',
+        sortFurnish: '',
+        sortTransport: '',
+        sortHouse: ''
     });
 
     const [formData, setFormData] = useState({
@@ -349,6 +356,55 @@ const App = () => {
                                     onChange={(e) => setFilters({ ...filters, minNumberOfRooms: e.target.value })}
                                     className="border rounded px-3 py-2"
                                 />
+                                <input
+                                    type="number"
+                                    placeholder="Макс. комнат"
+                                    value={filters.maxNumberOfRooms}
+                                    onChange={(e) => setFilters({ ...filters, maxNumberOfRooms: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Мин. X"
+                                    value={filters.minX}
+                                    onChange={(e) => setFilters({ ...filters, minX: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Макс. X"
+                                    value={filters.maxX}
+                                    onChange={(e) => setFilters({ ...filters, maxX: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Мин. Y"
+                                    value={filters.minY}
+                                    onChange={(e) => setFilters({ ...filters, minY: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Макс. Y"
+                                    value={filters.maxY}
+                                    onChange={(e) => setFilters({ ...filters, maxY: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                />
+                                <input
+                                    type="date"
+                                    placeholder="Мин. дата создания"
+                                    value={filters.minCreationDate}
+                                    onChange={(e) => setFilters({ ...filters, minCreationDate: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                />
+                                <input
+                                    type="date"
+                                    placeholder="Макс. дата создания"
+                                    value={filters.maxCreationDate}
+                                    onChange={(e) => setFilters({ ...filters, maxCreationDate: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                />
                                 <select
                                     value={filters.furnish}
                                     onChange={(e) => setFilters({ ...filters, furnish: e.target.value })}
@@ -387,6 +443,15 @@ const App = () => {
                                     <option value="asc">По возрастанию</option>
                                     <option value="desc">По убыванию</option>
                                 </select>
+                                <select
+                                    value={sorting.sortCreationDate}
+                                    onChange={(e) => setSorting({ ...sorting, sortCreationDate: e.target.value })}
+                                    className="border rounded px-3 py-2"
+                                >
+                                    <option value="">Сорт. по дате создания</option>
+                                    <option value="asc">Сначала старые</option>
+                                    <option value="desc">Сначала новые</option>
+                                </select>
                             </div>
 
                             <button
@@ -394,9 +459,13 @@ const App = () => {
                                     setFilters({
                                         name: '', minArea: '', maxArea: '', minNumberOfRooms: '',
                                         maxNumberOfRooms: '', furnish: '', transport: '', minX: '',
-                                        maxX: '', minY: '', maxY: ''
+                                        maxX: '', minY: '', maxY: '', minCreationDate: '', maxCreationDate: ''
                                     });
-                                    setSorting({ sortId: '', sortName: '', sortArea: '', sortNumberOfRooms: '' });
+                                    setSorting({
+                                        sortId: '', sortName: '', sortArea: '', sortNumberOfRooms: '',
+                                        sortCoordinates: '', sortCreationDate: '', sortFurnish: '',
+                                        sortTransport: '', sortHouse: ''
+                                    });
                                 }}
                                 className="mt-3 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
                             >

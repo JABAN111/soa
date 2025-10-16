@@ -1,5 +1,6 @@
 package soa.study.agency_service.service;
 
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import soa.study.agency_service.jpa.domain.Flat;
@@ -29,9 +30,12 @@ public class FlatService {
     }
 
     public Double getTotalCost() {
-        return flatRepository.findAll()
-                .stream()
-                .mapToDouble(x -> x.getNumberOfRooms() * 9000.0)
-                .sum();
+        double sum = 0f;
+
+        var flats = flatRepository.findAll();
+        for (Flat flat : flats) {
+            sum += flat.getNumberOfRooms()*9000d;
+        }
+        return sum;
     }
 }

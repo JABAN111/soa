@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import soa.study.agency_service.rest.dto.FlatResponse;
 import soa.study.agency_service.rest.error.ErrorResponse;
 import soa.study.agency_service.rest.dto.TotalCostResponse;
 import soa.study.agency_service.jpa.domain.Flat;
@@ -23,7 +24,7 @@ public class AgencyController {
     ) {
         try {
             Flat mostExpensive = flatService.getMostExpensiveFlat(id1, id2, id3);
-            return ResponseEntity.ok(mostExpensive);
+            return ResponseEntity.ok(new FlatResponse(mostExpensive));
         } catch (IllegalArgumentException e) {
             ErrorResponse error = new ErrorResponse(
                     "NOT_FOUND",
