@@ -12,6 +12,7 @@ import soa.study.agency_service.service.FlatService;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AgencyController {
 
     private final FlatService flatService;

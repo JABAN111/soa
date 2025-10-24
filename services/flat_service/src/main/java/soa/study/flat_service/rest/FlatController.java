@@ -20,6 +20,7 @@ import java.util.NoSuchElementException;
 @RequestMapping("/api/flats")
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class FlatController {
 
     private final FlatService flatService;

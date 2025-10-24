@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-const payaraAddr = "http://localhost:8080/agency"
+const payaraAddr = "http://localhost:23210/agency"
 
 const (
 	getTotalCost   = payaraAddr + "/get-total-cost"
