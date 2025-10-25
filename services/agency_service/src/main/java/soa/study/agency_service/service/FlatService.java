@@ -1,14 +1,13 @@
 package soa.study.agency_service.service;
 
-import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.client.OkHttp3ClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
 import soa.study.agency_service.jpa.domain.Flat;
 import soa.study.agency_service.jpa.repository.FlatRepository;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -34,8 +33,11 @@ public class FlatService {
 
         var flats = flatRepository.findAll();
         for (Flat flat : flats) {
-            sum += flat.getNumberOfRooms()*9000d;
+            sum += flat.getNumberOfRooms() * 9000d;
         }
         return sum;
     }
+
+
+    // call create flat
 }

@@ -3,11 +3,14 @@ package soa.study.agency_service.rest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import soa.study.agency_service.rest.dto.FlatResponse;
-import soa.study.agency_service.rest.error.ErrorResponse;
-import soa.study.agency_service.rest.dto.TotalCostResponse;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 import soa.study.agency_service.jpa.domain.Flat;
+import soa.study.agency_service.rest.dto.FlatResponse;
+import soa.study.agency_service.rest.dto.TotalCostResponse;
+import soa.study.agency_service.rest.error.ErrorResponse;
 import soa.study.agency_service.service.FlatService;
 
 @RestController

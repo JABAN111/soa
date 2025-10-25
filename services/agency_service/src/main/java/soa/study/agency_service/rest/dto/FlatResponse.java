@@ -1,10 +1,5 @@
 package soa.study.agency_service.rest.dto;
 
-import jakarta.persistence.*;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import soa.study.agency_service.jpa.domain.*;
