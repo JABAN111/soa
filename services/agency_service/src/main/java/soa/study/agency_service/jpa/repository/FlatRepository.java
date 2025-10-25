@@ -5,8 +5,4 @@ import org.springframework.stereotype.Repository;
 import soa.study.agency_service.jpa.domain.Flat;
 
 @Repository
-public interface FlatRepository extends JpaRepository<Flat, Integer> {
-
-//    @Query("SELECT COALESCE(SUM(f.price), 0) FROM Flat f")
-//    Float calculateTotalCost();
-}
+public interface FlatRepository extends JpaRepository<Flat, Integer> { }
