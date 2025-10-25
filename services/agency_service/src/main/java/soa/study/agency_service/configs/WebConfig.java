@@ -15,8 +15,9 @@ public class WebConfig {
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
+
+        config.setAllowedOriginPatterns(List.of("*"));
         config.setAllowCredentials(true);
-        config.addAllowedOriginPattern("*");
         config.setAllowedHeaders(List.of("*"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"));
         config.setExposedHeaders(List.of("*"));
