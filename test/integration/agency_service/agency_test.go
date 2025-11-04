@@ -41,12 +41,13 @@ func TestPush(t *testing.T) {
 
 	p := PushData{
 		FlatID:        1234,
-		NumberOfRooms: 1,
+		NumberOfRooms: 767876887,
 	}
+
 	jsonData, err := json.Marshal(p)
 	require.NoError(t, err)
-	jsonReader := bytes.NewReader(jsonData)
-	req, err := http.NewRequest("POST", payaraAddr+"/push", jsonReader)
+
+	req, err := http.NewRequest("POST", payaraAddr+"/push", bytes.NewBuffer(jsonData))
 	require.NoError(t, err)
 
 	req.Header.Add("Content-Type", "application/json")

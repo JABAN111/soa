@@ -24,7 +24,7 @@ type Flat struct {
 	Transport         string `json:"transport"`
 }
 
-const wildflyAddr = "https://localhost:8443/flat_service"
+const wildflyAddr = "https://localhost:23211/flat_service"
 
 const (
 	healthPing = wildflyAddr + "/health"

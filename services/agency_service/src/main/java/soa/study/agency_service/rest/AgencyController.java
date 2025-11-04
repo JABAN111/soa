@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import soa.study.agency_service.jpa.domain.FlatStat;
 import soa.study.agency_service.rest.dto.FlatStatResponse;
 import soa.study.agency_service.rest.dto.TotalCostResponse;
 import soa.study.agency_service.rest.error.ErrorResponse;
@@ -36,12 +35,9 @@ public class AgencyController {
     }
 
     @PostMapping("/push")
-    public ResponseEntity push(@RequestBody FlatStatResponse flatStat) {
-        FlatStat stat = new FlatStat();
-        stat.setFlatId(flatStat.getFlatId());
-        stat.setNumberOfRooms(flatStat.getNumberOfRooms());
-        flatService.pushFlatStats(stat);
-        return ResponseEntity.status(HttpStatus.OK).body(flatStat);
+    public void push(@RequestBody FlatStatResponse flatStat) {
+        System.out.println(flatStat);
+        flatService.pushFlatStats(flatStat.toFlatStat());
     }
 
     @GetMapping("/get-total-cost")

@@ -20,4 +20,7 @@ public class FlatStat {
 
     @Column(name = "number_of_rooms")
     private Integer numberOfRooms;
+
+    @Column(name = "price")
+    private Float price;
 }

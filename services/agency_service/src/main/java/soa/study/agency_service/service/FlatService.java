@@ -2,10 +2,8 @@ package soa.study.agency_service.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import soa.study.agency_service.jpa.domain.FlatStat;
-import soa.study.agency_service.jpa.repository.FlatRepository;
 import soa.study.agency_service.jpa.repository.FlatStatRepository;
 
 import java.util.Comparator;
