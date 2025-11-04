@@ -1,6 +1,8 @@
 package agency_service
 
 import (
+	"bytes"
+	"encoding/json"
 	"io"
 	"net/http"
 	"net/url"
@@ -10,7 +12,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-const payaraAddr = "http://localhost:23210/agency"
+const payaraAddr = "https://localhost:23223/agency"
 
 const (
 	getTotalCost   = payaraAddr + "/get-total-cost"
@@ -27,6 +29,33 @@ func TestHealth(t *testing.T) {
 	resp, err := httpCl.Do(req)
 	require.NoError(t, err)
 	require.Equal(t, http.StatusOK, resp.StatusCode)
+}
+
+func TestPush(t *testing.T) {
+	httpCl := util.GetHttpClient()
+
+	type PushData struct {
+		FlatID        int64 `json:"flat_id"`
+		NumberOfRooms int64 `json:"number_of_rooms"`
+	}
+
+	p := PushData{
+		FlatID:        1234,
+		NumberOfRooms: 1,
+	}
+	jsonData, err := json.Marshal(p)
+	require.NoError(t, err)
+	jsonReader := bytes.NewReader(jsonData)
+	req, err := http.NewRequest("POST", payaraAddr+"/push", jsonReader)
+	require.NoError(t, err)
+
+	req.Header.Add("Content-Type", "application/json")
+	resp, err := httpCl.Do(req)
+	require.NoError(t, err)
+
+	responseB, err := io.ReadAll(resp.Body)
+	t.Logf("response: %v", resp.StatusCode)
+	t.Logf("body: %v", string(responseB))
 }
 
 func TestGetTotalCost(t *testing.T) {

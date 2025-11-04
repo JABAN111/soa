@@ -3,12 +3,9 @@ package soa.study.agency_service.rest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
-import soa.study.agency_service.jpa.domain.Flat;
-import soa.study.agency_service.rest.dto.FlatResponse;
+import org.springframework.web.bind.annotation.*;
+import soa.study.agency_service.jpa.domain.FlatStat;
+import soa.study.agency_service.rest.dto.FlatStatResponse;
 import soa.study.agency_service.rest.dto.TotalCostResponse;
 import soa.study.agency_service.rest.error.ErrorResponse;
 import soa.study.agency_service.service.FlatService;
@@ -22,13 +19,13 @@ public class AgencyController {
 
     @GetMapping("/get-most-expensive/{id1}/{id2}/{id3}")
     public ResponseEntity<?> getMostExpensive(
-            @PathVariable Integer id1,
-            @PathVariable Integer id2,
-            @PathVariable Integer id3
+            @PathVariable Long id1,
+            @PathVariable Long id2,
+            @PathVariable Long id3
     ) {
         try {
-            Flat mostExpensive = flatService.getMostExpensiveFlat(id1, id2, id3);
-            return ResponseEntity.ok(new FlatResponse(mostExpensive));
+            var mostExpensive = flatService.getMostExpensiveFlat(id1, id2, id3);
+            return ResponseEntity.ok(new FlatStatResponse(mostExpensive));
         } catch (IllegalArgumentException e) {
             ErrorResponse error = new ErrorResponse(
                     "NOT_FOUND",
@@ -36,6 +33,15 @@ public class AgencyController {
             );
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
         }
+    }
+
+    @PostMapping("/push")
+    public ResponseEntity push(@RequestBody FlatStatResponse flatStat) {
+        FlatStat stat = new FlatStat();
+        stat.setFlatId(flatStat.getFlatId());
+        stat.setNumberOfRooms(flatStat.getNumberOfRooms());
+        flatService.pushFlatStats(stat);
+        return ResponseEntity.status(HttpStatus.OK).body(flatStat);
     }
 
     @GetMapping("/get-total-cost")

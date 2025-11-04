@@ -6,9 +6,20 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: kIRfXLhf95PZkxZ6
+      POSTGRES_USER: s368601
+      POSTGRES_DB: studs
     volumes:
       - agency:/var/lib/postgresql/data
+  metrics:
+    image: postgres:18
+    container_name: metrics_db
+    restart: unless-stopped
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_PASSWORD: kIRfXLhf95PZkxZ6
+      POSTGRES_USER: s368601
+      POSTGRES_DB: studs
 volumes:
   agency:

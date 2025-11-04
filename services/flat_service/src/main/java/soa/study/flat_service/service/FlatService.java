@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 public class FlatService {
 
     private final FlatRepository flatRepository;
+    private final PushService pushService;
 
     public Page<Flat> getAllFlats(Map<String, String> filters, int page, int size) {
         Specification<Flat> spec = FlatSpecification.withFilters(filters);
@@ -38,7 +39,9 @@ public class FlatService {
     public Flat createFlat(Flat flat) {
         flat.setId(null);
         flat.setCreationDate(null);
-        return flatRepository.save(flat);
+        var saved = flatRepository.save(flat);
+        pushService.push(saved.getId(), saved.getNumberOfRooms());
+        return saved;
     }
 
     @Transactional
@@ -55,7 +58,9 @@ public class FlatService {
         flat.setTransport(flatDetails.getTransport());
         flat.setHouse(flatDetails.getHouse());
 
-        return flatRepository.save(flat);
+        var saved = flatRepository.save(flat);
+        pushService.push(saved.getId(), saved.getNumberOfRooms());
+        return saved;
     }
 
     @Transactional
@@ -64,6 +69,7 @@ public class FlatService {
             throw new NoSuchElementException("Flat not found with id: " + id);
         }
         flatRepository.deleteById(id);
+        pushService.push(id, null);
     }
 
     public Long sumAllRooms() {
