@@ -31,13 +31,9 @@ public class FlatStatResponse {
 
 
     public FlatStat toFlatStat() {
-        var stat = new FlatStat();
-        stat.setFlatId(this.flatId);
-        stat.setNumberOfRooms(this.numberOfRooms);
         if (this.price == null) {
             this.price = this.numberOfRooms * 9000f;
-            stat.setPrice(this.price);
         }
-        return stat;
+        return new FlatStat(this.flatId, this.numberOfRooms, this.price);
     }
 }

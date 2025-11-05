@@ -21,5 +21,51 @@ services:
       POSTGRES_PASSWORD: kIRfXLhf95PZkxZ6
       POSTGRES_USER: s368601
       POSTGRES_DB: studs
+
+  cassandra:
+    image: cassandra:5.0
+    container_name: agency_cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_CLUSTER_NAME=AgencyCluster
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+    healthcheck:
+      test: ["CMD", "cqlsh", "-e", "describe keyspaces"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+    networks:
+      - agency_net
+
+  cassandra-init:
+    image: cassandra:5.0
+    container_name: agency_cassandra_init
+    depends_on:
+      cassandra:
+        condition: service_healthy
+    volumes:
+      - ./init-scripts:/scripts
+    command: >
+      bash -c "
+        echo 'Waiting for Cassandra to be fully ready...';
+        sleep 10;
+        echo 'Executing init script...';
+        cqlsh cassandra -f /scripts/init-agency.cql;
+        echo 'Init completed successfully!';
+      "
+    networks:
+      - agency_net
+    restart: "no"
+
 volumes:
   agency:
+  cassandra_data:
+
+networks:
+  agency_net:
+    driver: bridge

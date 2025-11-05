@@ -1,26 +1,41 @@
 package soa.study.agency_service.jpa.domain;
 
-import jakarta.persistence.*;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.cassandra.core.mapping.Column;
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
 
+import java.sql.Timestamp;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
-@Entity
-@Table(name = "flat_stat")
+@AllArgsConstructor
+@Table("flat_stat")
 public class FlatStat {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @PrimaryKey
+    private UUID id;
 
-    @Column(name = "flat_id")
+    @Column("flat_id")
     private Long flatId;
 
-    @Column(name = "number_of_rooms")
+    @Column("number_of_rooms")
     private Integer numberOfRooms;
 
-    @Column(name = "price")
+    @Column("price")
     private Float price;
+
+    private Timestamp created_at;
+
+    public FlatStat(Long flatId, Integer numberOfRooms, Float price) {
+        this.flatId = flatId;
+        this.numberOfRooms = numberOfRooms;
+        this.price = price;
+        this.id = UUID.randomUUID();
+        this.created_at = new Timestamp(System.currentTimeMillis());
+    }
 }
