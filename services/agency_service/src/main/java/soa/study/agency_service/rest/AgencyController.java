@@ -36,7 +36,6 @@ public class AgencyController {
 
     @PostMapping("/push")
     public void push(@RequestBody FlatStatResponse flatStat) {
-        System.out.println(flatStat);
         flatService.pushFlatStats(flatStat.toFlatStat());
     }
 

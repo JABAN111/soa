@@ -8,7 +8,6 @@ import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-import java.sql.Timestamp;
 import java.util.UUID;
 
 @Data
@@ -24,18 +23,19 @@ public class FlatStat {
     private Long flatId;
 
     @Column("number_of_rooms")
-    private Integer numberOfRooms;
+    private Long numberOfRooms;
 
     @Column("price")
     private Float price;
 
-    private Timestamp created_at;
+    @Column("created_at")
+    private Long created_at;
 
-    public FlatStat(Long flatId, Integer numberOfRooms, Float price) {
+    public FlatStat(Long flatId, Long numberOfRooms, Float price) {
         this.flatId = flatId;
         this.numberOfRooms = numberOfRooms;
         this.price = price;
         this.id = UUID.randomUUID();
-        this.created_at = new Timestamp(System.currentTimeMillis());
+        this.created_at = System.currentTimeMillis();
     }
 }

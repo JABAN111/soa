@@ -16,7 +16,7 @@ public class FlatStatResponse {
 
     private Long flatId;
 
-    private Integer numberOfRooms;
+    private Long numberOfRooms;
 
     private Float price;
 
