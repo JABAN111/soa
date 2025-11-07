@@ -8,20 +8,6 @@ server:
 spring:
   application.name:
     agency_service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/studs
-    username: s368601
-    password: ${DB_PASSWORD:kIRfXLhf95PZkxZ6}
-    driver-class-name: org.postgresql.Driver
-  jpa:
-    hibernate:
-      ddl-auto: create
-    show-sql:
-      true
-    properties:
-      hibernate:
-        generate_statistics:
-          true
   cassandra:
     keyspace-name: agencydb
     contact-points: localhost

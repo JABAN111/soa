@@ -5,24 +5,13 @@ services:
     container_name: agency_db
     restart: unless-stopped
     ports:
-      - "5432:5432"
+      - "23455:23455"
     environment:
       POSTGRES_PASSWORD: kIRfXLhf95PZkxZ6
       POSTGRES_USER: s368601
       POSTGRES_DB: studs
     volumes:
       - agency:/var/lib/postgresql/data
-  metrics:
-    image: postgres:18
-    container_name: metrics_db
-    restart: unless-stopped
-    ports:
-      - "5435:5432"
-    environment:
-      POSTGRES_PASSWORD: kIRfXLhf95PZkxZ6
-      POSTGRES_USER: s368601
-      POSTGRES_DB: studs
-
   cassandra:
     image: cassandra:5.0
     container_name: agency_cassandra

@@ -1,7 +1,5 @@
-rm agency_service.war && \
- cd /Users/jaba/IdeaProjects/soa/services/agency_service && \
- make build && \
- mv target/agency_service.war /Users/jaba/IdeaProjects/soa/locallol/ && \
+ cd .. && make build-payara
+ mv target/agency_service.war locallol/ && \
  cd - && \
  java \
   -Djavax.net.ssl.keyStore=/Users/jaba/IdeaProjects/soa/services/agency_service/keystore.p12 \
