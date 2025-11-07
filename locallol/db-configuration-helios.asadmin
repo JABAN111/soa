@@ -1,0 +1,7 @@
+create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGSimpleDataSource --restype javax.sql.DataSource --property user=s368601:password=kIRfXLhf95PZkxZ6:DatabaseName=studs:ServerName=localhost:PortNumber=5435 agency_service_pool
+create-jdbc-resource --connectionpoolid=agency_service_pool jdbc/agency_service
+set configs.config.server-config.network-config.protocols.protocol.http-listener-1.security-enabled=false
+set configs.config.server-config.network-config.protocols.protocol.http-listener-1.http.redirect-port=23223
+delete configs.config.server-config.network-config.network-listeners.network-listener.http-listener-1
+list-jdbc-connection-pools
+list-jdbc-resources

@@ -1,0 +1,1319 @@
+2025-11-04 23:17:20,665 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2025-11-04 23:17:20,956 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.6.Final
+2025-11-04 23:17:20,961 INFO  [org.jboss.threads] (main) JBoss Threads version 3.9.1
+2025-11-04 23:17:21,038 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) starting
+2025-11-04 23:17:21,039 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home
+	java.io.tmpdir = /var/folders/xv/slvr_rgd0t99dlbj0bdgpmq00000gn/T/
+	java.library.path = /Users/jaba/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.13+11-LTS
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Amazon.com Inc.
+	java.vendor.url = https://aws.amazon.com/corretto/
+	java.vendor.url.bug = https://github.com/corretto/corretto-17/issues/
+	java.vendor.version = Corretto-17.0.13.11.1
+	java.version = 17.0.13
+	java.version.date = 2024-10-15
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Amazon.com Inc.
+	java.vm.version = 17.0.13+11-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final
+	jboss.host.name = macbookpro
+	jboss.http.port = 23210
+	jboss.https.port = 23211
+	jboss.management.http.port = 23209
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbookpro
+	jboss.qualified.host.name = macbookpro
+	jboss.server.base.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone
+	jboss.server.config.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data
+	jboss.server.log.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log
+	jboss.server.name = macbookpro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/tmp
+	jboss.threads.eqe.statistics = true
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 26.0.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar -mp /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final -Djboss.server.base.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone -b 0.0.0.0 -Djboss.http.port=23210 -Djboss.https.port=23211 -Djboss.management.http.port=23209
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = RU
+	user.dir = /Users/jaba/IdeaProjects/soa/locallol
+	user.home = /Users/jaba
+	user.language = ru
+	user.name = jaba
+	user.timezone = Europe/Moscow
+2025-11-04 23:17:21,039 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties -Xmx1G 
+2025-11-04 23:17:21,571 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
+2025-11-04 23:17:22,028 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-11-04 23:17:22,035 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.8.16.Final
+2025-11-04 23:17:22,038 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.8.16.Final
+2025-11-04 23:17:22,048 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-11-04 23:17:22,056 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-11-04 23:17:22,056 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-11-04 23:17:22,060 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 75) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-11-04 23:17:22,060 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.12.Final
+2025-11-04 23:17:22,060 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-11-04 23:17:22,061 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-11-04 23:17:22,062 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-11-04 23:17:22,064 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 68) WFLYNAM0001: Activating Naming Subsystem
+2025-11-04 23:17:22,064 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2025-11-04 23:17:22,069 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 77) WFLYWS0002: Activating WebServices Extension
+2025-11-04 23:17:22,073 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.14.Final)
+2025-11-04 23:17:22,077 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-11-04 23:17:22,079 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-9) WFLYSRV0027: Starting deployment of "flat_service.war" (runtime-name: "flat_service.war")
+2025-11-04 23:17:22,082 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-11-04 23:17:22,084 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-11-04 23:17:22,088 INFO  [org.jboss.as.naming] (MSC service thread 1-9) WFLYNAM0003: Starting Naming Service
+2025-11-04 23:17:22,090 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-9) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-11-04 23:17:22,104 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-11-04 23:17:22,112 INFO  [org.jboss.remoting] (MSC service thread 1-9) JBoss Remoting version 5.0.31.Final
+2025-11-04 23:17:22,144 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0014: Creating file handler for path '/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-11-04 23:17:22,145 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2025-11-04 23:17:22,145 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2025-11-04 23:17:22,151 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2025-11-04 23:17:22,152 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) Queuing requests.
+2025-11-04 23:17:22,154 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2025-11-04 23:17:22,182 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:23210
+2025-11-04 23:17:22,185 INFO  [org.jboss.as.ejb3] (MSC service thread 1-9) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-04 23:17:22,207 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/deployments
+2025-11-04 23:17:22,209 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:23211
+2025-11-04 23:17:22,211 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-11-04 23:17:22,277 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 7.3.3.Final (Apache CXF 4.0.9) 
+2025-11-04 23:17:25,109 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-9) WFLYSRV0018: Deployment "deployment.flat_service.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-11-04 23:17:25,152 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment flat_service.war
+2025-11-04 23:17:25,299 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 8.0.2.Final
+2025-11-04 23:17:25,372 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-3) Activating CDI extension for Spring Data JPA repositories
+2025-11-04 23:17:25,524 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-11-04 23:17:25,542 INFO  [org.jboss.weld.Version] (MSC service thread 1-3) WELD-000900: 5.1.6 (Final)
+2025-11-04 23:17:25,572 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-04 23:17:25,642 INFO  [org.jboss.weld.Event] (MSC service thread 1-7) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-11-04 23:17:25,915 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 82) 2 Spring WebApplicationInitializers detected on classpath
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82) 
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82)   .   ____          _            __ _ _
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82)   '  |____| .__|_| |_|_| |_\__, | / / / /
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82)  =========|_|==============|___/=/_/_/_/
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82) 
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82) [32m :: Spring Boot :: [39m              [2m (v3.5.6)[0;39m
+2025-11-04 23:17:26,079 INFO  [stdout] (ServerService Thread Pool -- 82) 
+2025-11-04 23:17:26,106 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 82) Starting FlatServiceApplication using Java 17.0.13 with PID 79717 (started by jaba in /Users/jaba/IdeaProjects/soa/locallol)
+2025-11-04 23:17:26,107 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 82) No active profile set, falling back to 1 default profile: "default"
+2025-11-04 23:17:26,358 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 82) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04 23:17:26,390 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 82) Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-11-04 23:17:26,539 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 82) Initializing Spring embedded WebApplicationContext
+2025-11-04 23:17:26,540 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 82) Root WebApplicationContext: initialization completed in 423 ms
+2025-11-04 23:17:26,673 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 82) HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04 23:17:26,695 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 82) HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-04 23:17:26,713 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 82) HHH000026: Second-level cache disabled
+2025-11-04 23:17:26,822 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] (ServerService Thread Pool -- 82) No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04 23:17:26,832 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (ServerService Thread Pool -- 82) HHH000490: Using JTA platform [org.springframework.boot.orm.jpa.hibernate.SpringJtaPlatform]
+2025-11-04 23:17:26,837 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 82) HikariPool-1 - Starting...
+2025-11-04 23:17:26,960 INFO  [com.zaxxer.hikari.pool.HikariPool] (ServerService Thread Pool -- 82) HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3816b65b
+2025-11-04 23:17:26,960 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 82) HikariPool-1 - Start completed.
+2025-11-04 23:17:27,009 INFO  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 82) HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04 23:17:27,401 INFO  [stdout] (ServerService Thread Pool -- 82) Hibernate: set client_min_messages = WARNING
+2025-11-04 23:17:27,402 INFO  [stdout] (ServerService Thread Pool -- 82) Hibernate: drop table if exists flats cascade
+2025-11-04 23:17:27,408 INFO  [stdout] (ServerService Thread Pool -- 82) Hibernate: create table flats (area integer not null check (area>=1), coordinate_x integer not null check (coordinate_x<=324), coordinate_y integer not null check (coordinate_y<=832), creation_date date not null, house_floors integer check (house_floors>=1), id integer generated by default as identity check (id>=1), number_of_bathrooms integer not null check (number_of_bathrooms>=1), number_of_rooms integer not null check (number_of_rooms>=1), house_year bigint check (house_year>=1), furnish varchar(255) not null check (furnish in ('DESIGNER','NONE','BAD','LITTLE')), house_name varchar(255), name varchar(255) not null, transport varchar(255) check (transport in ('NONE','FEW','LITTLE','NORMAL')), primary key (id))
+2025-11-04 23:17:27,462 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 82) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 23:17:27,616 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 82) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:17:27,642 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 82) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:17:27,645 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] (ServerService Thread Pool -- 82) Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04 23:17:27,856 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 82) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:17:27,857 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 82) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:17:27,883 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 82) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:17:27,927 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] (ServerService Thread Pool -- 82) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 23:17:28,100 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 82) Started FlatServiceApplication in 2.157 seconds (process running for 7.633)
+2025-11-04 23:17:28,130 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 82) Initializing Mojarra 4.0.11 for context '/flat_service'
+2025-11-04 23:17:28,505 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/flat_service' for server 'default-server'
+2025-11-04 23:17:28,528 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "flat_service.war" (runtime-name : "flat_service.war")
+2025-11-04 23:17:28,554 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-11-04 23:17:28,557 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:23209/management
+2025-11-04 23:17:28,557 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:23209
+2025-11-04 23:17:28,558 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) started in 8089ms - Started 574 of 786 services (335 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-11-04 23:18:16,861 INFO  [io.undertow.servlet] (default task-2) Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 23:18:16,861 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Initializing Servlet 'dispatcherServlet'
+2025-11-04 23:18:16,865 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Completed initialization in 3 ms
+2025-11-04 23:18:16,906 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:19:42,352 INFO  [stdout] (default task-2) Hibernate: select f1_0.id,f1_0.area,f1_0.coordinate_x,f1_0.coordinate_y,f1_0.creation_date,f1_0.furnish,f1_0.house_name,f1_0.house_floors,f1_0.house_year,f1_0.name,f1_0.number_of_bathrooms,f1_0.number_of_rooms,f1_0.transport from flats f1_0 where 1=1 offset ? rows fetch first ? rows only
+2025-11-04 23:19:42,440 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    3696291 nanoseconds spent acquiring 1 JDBC connections;
+    18417 nanoseconds spent releasing 1 JDBC connections;
+    8153833 nanoseconds spent preparing 1 JDBC statements;
+    19708958 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    357875 nanoseconds spent executing 1 pre-partial-flushes;
+    5750 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:19:43,935 INFO  [stdout] (default task-2) Hibernate: select f1_0.id,f1_0.area,f1_0.coordinate_x,f1_0.coordinate_y,f1_0.creation_date,f1_0.furnish,f1_0.house_name,f1_0.house_floors,f1_0.house_year,f1_0.name,f1_0.number_of_bathrooms,f1_0.number_of_rooms,f1_0.transport from flats f1_0 where 1=1 offset ? rows fetch first ? rows only
+2025-11-04 23:19:43,939 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    929292 nanoseconds spent acquiring 1 JDBC connections;
+    8084 nanoseconds spent releasing 1 JDBC connections;
+    998417 nanoseconds spent preparing 1 JDBC statements;
+    1155458 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    2292 nanoseconds spent executing 1 pre-partial-flushes;
+    1250 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:19:43,942 INFO  [stdout] (default task-2) Hibernate: select f1_0.id,f1_0.area,f1_0.coordinate_x,f1_0.coordinate_y,f1_0.creation_date,f1_0.furnish,f1_0.house_name,f1_0.house_floors,f1_0.house_year,f1_0.name,f1_0.number_of_bathrooms,f1_0.number_of_rooms,f1_0.transport from flats f1_0 where 1=1 offset ? rows fetch first ? rows only
+2025-11-04 23:19:43,944 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    11958 nanoseconds spent acquiring 1 JDBC connections;
+    7833 nanoseconds spent releasing 1 JDBC connections;
+    66208 nanoseconds spent preparing 1 JDBC statements;
+    717750 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    2500 nanoseconds spent executing 1 pre-partial-flushes;
+    1209 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:20:29,270 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:20:29,479 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 500
+2025-11-04 23:20:29,494 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    7290917 nanoseconds spent acquiring 1 JDBC connections;
+    10417 nanoseconds spent releasing 1 JDBC connections;
+    7657667 nanoseconds spent preparing 1 JDBC statements;
+    25382792 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    4063375 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:20:29,501 INFO  [stdout] (default task-3) Hibernate: select f1_0.id,f1_0.area,f1_0.coordinate_x,f1_0.coordinate_y,f1_0.creation_date,f1_0.furnish,f1_0.house_name,f1_0.house_floors,f1_0.house_year,f1_0.name,f1_0.number_of_bathrooms,f1_0.number_of_rooms,f1_0.transport from flats f1_0 where 1=1 offset ? rows fetch first ? rows only
+2025-11-04 23:20:29,513 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-3) Session Metrics {
+    19167 nanoseconds spent acquiring 1 JDBC connections;
+    33291 nanoseconds spent releasing 1 JDBC connections;
+    49667 nanoseconds spent preparing 1 JDBC statements;
+    1505292 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    2958 nanoseconds spent executing 1 pre-partial-flushes;
+    1709 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:20:29,517 INFO  [stdout] (default task-2) Hibernate: select f1_0.id,f1_0.area,f1_0.coordinate_x,f1_0.coordinate_y,f1_0.creation_date,f1_0.furnish,f1_0.house_name,f1_0.house_floors,f1_0.house_year,f1_0.name,f1_0.number_of_bathrooms,f1_0.number_of_rooms,f1_0.transport from flats f1_0 where 1=1 offset ? rows fetch first ? rows only
+2025-11-04 23:20:29,528 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    14417 nanoseconds spent acquiring 1 JDBC connections;
+    11959 nanoseconds spent releasing 1 JDBC connections;
+    47208 nanoseconds spent preparing 1 JDBC statements;
+    8137084 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    3583 nanoseconds spent executing 1 pre-partial-flushes;
+    1292 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:21:00,568 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:21:00,636 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 500
+2025-11-04 23:21:00,645 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    2988625 nanoseconds spent acquiring 1 JDBC connections;
+    13042 nanoseconds spent releasing 1 JDBC connections;
+    3169833 nanoseconds spent preparing 1 JDBC statements;
+    22657791 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    244042 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:23:46,091 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-11-04 23:23:46,104 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-04 23:23:46,111 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-11-04 23:23:46,119 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-04 23:23:46,129 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-11-04 23:23:46,137 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 8) WFLYUT0022: Unregistered web context: '/flat_service' from server 'default-server'
+2025-11-04 23:23:46,139 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 8) Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-04 23:23:46,143 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 8) Closing Spring root WebApplicationContext
+2025-11-04 23:23:46,147 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 8) Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 23:23:46,155 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 8) HikariPool-1 - Shutdown initiated...
+2025-11-04 23:23:46,156 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 8) HikariPool-1 - Shutdown completed.
+2025-11-04 23:23:46,169 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2025-11-04 23:23:46,182 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-9) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-11-04 23:23:46,184 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-11-04 23:23:46,191 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0008: Undertow HTTP listener default suspending
+2025-11-04 23:23:46,191 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-11-04 23:23:46,193 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:23210
+2025-11-04 23:23:46,193 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:23211
+2025-11-04 23:23:46,196 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-11-04 23:23:46,249 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment flat_service.war (runtime-name: flat_service.war) in 130ms
+2025-11-04 23:23:46,254 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) stopped in 137ms
+2025-11-04 23:25:20,181 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2025-11-04 23:25:20,444 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.6.Final
+2025-11-04 23:25:20,449 INFO  [org.jboss.threads] (main) JBoss Threads version 3.9.1
+2025-11-04 23:25:20,507 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) starting
+2025-11-04 23:25:20,508 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home
+	java.io.tmpdir = /var/folders/xv/slvr_rgd0t99dlbj0bdgpmq00000gn/T/
+	java.library.path = /Users/jaba/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.13+11-LTS
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Amazon.com Inc.
+	java.vendor.url = https://aws.amazon.com/corretto/
+	java.vendor.url.bug = https://github.com/corretto/corretto-17/issues/
+	java.vendor.version = Corretto-17.0.13.11.1
+	java.version = 17.0.13
+	java.version.date = 2024-10-15
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Amazon.com Inc.
+	java.vm.version = 17.0.13+11-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final
+	jboss.host.name = macbookpro
+	jboss.http.port = 23210
+	jboss.https.port = 23211
+	jboss.management.http.port = 23209
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbookpro
+	jboss.qualified.host.name = macbookpro
+	jboss.server.base.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone
+	jboss.server.config.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data
+	jboss.server.log.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log
+	jboss.server.name = macbookpro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/tmp
+	jboss.threads.eqe.statistics = true
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 26.0.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar -mp /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final -Djboss.server.base.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone -b 0.0.0.0 -Djboss.http.port=23210 -Djboss.https.port=23211 -Djboss.management.http.port=23209
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = RU
+	user.dir = /Users/jaba/IdeaProjects/soa/locallol
+	user.home = /Users/jaba
+	user.language = ru
+	user.name = jaba
+	user.timezone = Europe/Moscow
+2025-11-04 23:25:20,508 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties -Xmx1G 
+2025-11-04 23:25:20,854 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
+2025-11-04 23:25:21,286 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 19) WFLYDR0001: Content added at location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/90/9212bb03ceddfc78a88ec88876158c9d6921d1/content
+2025-11-04 23:25:21,300 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-11-04 23:25:21,306 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.8.16.Final
+2025-11-04 23:25:21,310 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.8.16.Final
+2025-11-04 23:25:21,321 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-11-04 23:25:21,323 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-11-04 23:25:21,323 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-11-04 23:25:21,325 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.12.Final
+2025-11-04 23:25:21,326 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2025-11-04 23:25:21,326 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-11-04 23:25:21,328 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 75) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-11-04 23:25:21,331 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 68) WFLYNAM0001: Activating Naming Subsystem
+2025-11-04 23:25:21,331 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-11-04 23:25:21,331 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-11-04 23:25:21,335 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 77) WFLYWS0002: Activating WebServices Extension
+2025-11-04 23:25:21,334 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.14.Final)
+2025-11-04 23:25:21,340 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-11-04 23:25:21,349 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "flat_service.war" (runtime-name: "flat_service.war")
+2025-11-04 23:25:21,352 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-11-04 23:25:21,355 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2025-11-04 23:25:21,355 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-11-04 23:25:21,356 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-11-04 23:25:21,377 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.31.Final
+2025-11-04 23:25:21,390 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-11-04 23:25:21,408 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0014: Creating file handler for path '/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-11-04 23:25:21,410 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2025-11-04 23:25:21,410 INFO  [org.jboss.as.ejb3] (MSC service thread 1-9) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2025-11-04 23:25:21,414 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2025-11-04 23:25:21,414 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) Queuing requests.
+2025-11-04 23:25:21,415 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2025-11-04 23:25:21,444 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:23210
+2025-11-04 23:25:21,454 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-04 23:25:21,464 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/deployments
+2025-11-04 23:25:21,477 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-11-04 23:25:21,479 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:23211
+2025-11-04 23:25:21,529 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 7.3.3.Final (Apache CXF 4.0.9) 
+2025-11-04 23:25:24,496 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-2) WFLYSRV0018: Deployment "deployment.flat_service.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-11-04 23:25:24,524 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment flat_service.war
+2025-11-04 23:25:24,650 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 8.0.2.Final
+2025-11-04 23:25:24,724 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-2) Activating CDI extension for Spring Data JPA repositories
+2025-11-04 23:25:24,853 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-11-04 23:25:24,867 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 5.1.6 (Final)
+2025-11-04 23:25:24,895 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) WFLYJCA0018: Started Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-04 23:25:24,982 INFO  [org.jboss.weld.Event] (MSC service thread 1-8) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-11-04 23:25:25,233 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 90) 2 Spring WebApplicationInitializers detected on classpath
+2025-11-04 23:25:25,393 INFO  [stdout] (ServerService Thread Pool -- 90) 
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90)   .   ____          _            __ _ _
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90)   '  |____| .__|_| |_|_| |_\__, | / / / /
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90)  =========|_|==============|___/=/_/_/_/
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90) 
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90) [32m :: Spring Boot :: [39m              [2m (v3.5.6)[0;39m
+2025-11-04 23:25:25,394 INFO  [stdout] (ServerService Thread Pool -- 90) 
+2025-11-04 23:25:25,421 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 90) Starting FlatServiceApplication using Java 17.0.13 with PID 81030 (started by jaba in /Users/jaba/IdeaProjects/soa/locallol)
+2025-11-04 23:25:25,422 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 90) No active profile set, falling back to 1 default profile: "default"
+2025-11-04 23:25:25,659 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 90) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04 23:25:25,685 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 90) Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-11-04 23:25:25,826 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 90) Initializing Spring embedded WebApplicationContext
+2025-11-04 23:25:25,827 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 90) Root WebApplicationContext: initialization completed in 396 ms
+2025-11-04 23:25:25,960 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 90) HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04 23:25:25,981 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 90) HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-04 23:25:25,998 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 90) HHH000026: Second-level cache disabled
+2025-11-04 23:25:26,105 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] (ServerService Thread Pool -- 90) No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04 23:25:26,116 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (ServerService Thread Pool -- 90) HHH000490: Using JTA platform [org.springframework.boot.orm.jpa.hibernate.SpringJtaPlatform]
+2025-11-04 23:25:26,121 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 90) HikariPool-1 - Starting...
+2025-11-04 23:25:26,268 INFO  [com.zaxxer.hikari.pool.HikariPool] (ServerService Thread Pool -- 90) HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11ff523f
+2025-11-04 23:25:26,269 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 90) HikariPool-1 - Start completed.
+2025-11-04 23:25:26,309 INFO  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 90) HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04 23:25:26,708 INFO  [stdout] (ServerService Thread Pool -- 90) Hibernate: set client_min_messages = WARNING
+2025-11-04 23:25:26,708 INFO  [stdout] (ServerService Thread Pool -- 90) Hibernate: drop table if exists flats cascade
+2025-11-04 23:25:26,728 INFO  [stdout] (ServerService Thread Pool -- 90) Hibernate: create table flats (area integer not null check (area>=1), coordinate_x integer not null check (coordinate_x<=324), coordinate_y integer not null check (coordinate_y<=832), creation_date date not null, house_floors integer check (house_floors>=1), id integer generated by default as identity check (id>=1), number_of_bathrooms integer not null check (number_of_bathrooms>=1), number_of_rooms integer not null check (number_of_rooms>=1), house_year bigint check (house_year>=1), furnish varchar(255) not null check (furnish in ('DESIGNER','NONE','BAD','LITTLE')), house_name varchar(255), name varchar(255) not null, transport varchar(255) check (transport in ('NONE','FEW','LITTLE','NORMAL')), primary key (id))
+2025-11-04 23:25:26,736 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 90) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 23:25:26,881 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 90) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:25:26,887 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] (ServerService Thread Pool -- 90) Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04 23:25:27,109 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 90) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:25:27,110 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 90) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:25:27,138 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 90) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:25:27,139 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 90) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:25:27,202 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] (ServerService Thread Pool -- 90) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 23:25:27,367 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 90) Started FlatServiceApplication in 2.108 seconds (process running for 7.378)
+2025-11-04 23:25:27,397 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 90) Initializing Mojarra 4.0.11 for context '/flat_service'
+2025-11-04 23:25:27,770 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 90) WFLYUT0021: Registered web context: '/flat_service' for server 'default-server'
+2025-11-04 23:25:27,790 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "flat_service.war" (runtime-name : "flat_service.war")
+2025-11-04 23:25:27,808 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-11-04 23:25:27,811 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:23209/management
+2025-11-04 23:25:27,811 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:23209
+2025-11-04 23:25:27,812 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) started in 7821ms - Started 574 of 786 services (335 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-11-04 23:25:33,442 INFO  [io.undertow.servlet] (default task-2) Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 23:25:33,443 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Initializing Servlet 'dispatcherServlet'
+2025-11-04 23:25:33,445 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Completed initialization in 2 ms
+2025-11-04 23:25:33,570 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:25:33,625 INFO  [stdout] (default task-2) start sending: FlatStatResponse(id=null, flatId=1, numberOfRooms=2, price=null)
+2025-11-04 23:25:33,826 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 500
+2025-11-04 23:25:33,867 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    7004625 nanoseconds spent acquiring 1 JDBC connections;
+    13708 nanoseconds spent releasing 1 JDBC connections;
+    10894584 nanoseconds spent preparing 1 JDBC statements;
+    22378292 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5690750 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:26:11,022 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:26:11,048 INFO  [stdout] (default task-2) start sending: FlatStatResponse(id=null, flatId=2, numberOfRooms=2, price=null)
+2025-11-04 23:26:11,494 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 404
+2025-11-04 23:26:11,499 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    3596875 nanoseconds spent acquiring 1 JDBC connections;
+    12667 nanoseconds spent releasing 1 JDBC connections;
+    3943000 nanoseconds spent preparing 1 JDBC statements;
+    19040833 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    234500 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:26:20,548 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:26:20,567 INFO  [stdout] (default task-2) start sending: FlatStatResponse(id=null, flatId=3, numberOfRooms=2, price=null)
+2025-11-04 23:26:20,762 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 500
+2025-11-04 23:26:20,764 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    3429042 nanoseconds spent acquiring 1 JDBC connections;
+    14292 nanoseconds spent releasing 1 JDBC connections;
+    3663542 nanoseconds spent preparing 1 JDBC statements;
+    12963792 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    302750 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:26:31,817 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:26:31,843 INFO  [stdout] (default task-2) start sending: FlatStatResponse(id=null, flatId=4, numberOfRooms=2, price=null)
+2025-11-04 23:26:31,868 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 500
+2025-11-04 23:26:31,872 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    2916375 nanoseconds spent acquiring 1 JDBC connections;
+    17542 nanoseconds spent releasing 1 JDBC connections;
+    3071542 nanoseconds spent preparing 1 JDBC statements;
+    19356042 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    300292 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:27:20,147 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-11-04 23:27:20,163 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-04 23:27:20,166 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-11-04 23:27:20,173 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-04 23:27:20,180 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-11-04 23:27:20,185 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 90) WFLYUT0022: Unregistered web context: '/flat_service' from server 'default-server'
+2025-11-04 23:27:20,186 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 90) Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-04 23:27:20,187 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 90) Closing Spring root WebApplicationContext
+2025-11-04 23:27:20,192 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 90) Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 23:27:20,195 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 90) HikariPool-1 - Shutdown initiated...
+2025-11-04 23:27:20,197 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 90) HikariPool-1 - Shutdown completed.
+2025-11-04 23:27:20,204 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2025-11-04 23:27:20,210 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-11-04 23:27:20,211 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-11-04 23:27:20,246 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2025-11-04 23:27:20,246 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-11-04 23:27:20,246 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:23210
+2025-11-04 23:27:20,246 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:23211
+2025-11-04 23:27:20,247 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-11-04 23:27:20,302 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment flat_service.war (runtime-name: flat_service.war) in 125ms
+2025-11-04 23:27:20,307 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) stopped in 133ms
+2025-11-04 23:27:25,773 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2025-11-04 23:27:26,037 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.6.Final
+2025-11-04 23:27:26,042 INFO  [org.jboss.threads] (main) JBoss Threads version 3.9.1
+2025-11-04 23:27:26,099 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) starting
+2025-11-04 23:27:26,100 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home
+	java.io.tmpdir = /var/folders/xv/slvr_rgd0t99dlbj0bdgpmq00000gn/T/
+	java.library.path = /Users/jaba/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.13+11-LTS
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Amazon.com Inc.
+	java.vendor.url = https://aws.amazon.com/corretto/
+	java.vendor.url.bug = https://github.com/corretto/corretto-17/issues/
+	java.vendor.version = Corretto-17.0.13.11.1
+	java.version = 17.0.13
+	java.version.date = 2024-10-15
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Amazon.com Inc.
+	java.vm.version = 17.0.13+11-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final
+	jboss.host.name = macbookpro
+	jboss.http.port = 23210
+	jboss.https.port = 23211
+	jboss.management.http.port = 23209
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbookpro
+	jboss.qualified.host.name = macbookpro
+	jboss.server.base.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone
+	jboss.server.config.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data
+	jboss.server.log.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log
+	jboss.server.name = macbookpro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/tmp
+	jboss.threads.eqe.statistics = true
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 26.0.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar -mp /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final -Djboss.server.base.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone -b 0.0.0.0 -Djboss.http.port=23210 -Djboss.https.port=23211 -Djboss.management.http.port=23209
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = RU
+	user.dir = /Users/jaba/IdeaProjects/soa/locallol
+	user.home = /Users/jaba
+	user.language = ru
+	user.name = jaba
+	user.timezone = Europe/Moscow
+2025-11-04 23:27:26,101 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties -Xmx1G 
+2025-11-04 23:27:26,450 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
+2025-11-04 23:27:27,018 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 21) WFLYDR0001: Content added at location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/80/70c56b5aa586942e8c01e9350ff5c53a264529/content
+2025-11-04 23:27:27,081 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-11-04 23:27:27,091 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.16.Final
+2025-11-04 23:27:27,095 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.16.Final
+2025-11-04 23:27:27,118 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-11-04 23:27:27,119 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-11-04 23:27:27,121 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 75) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-11-04 23:27:27,122 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 68) WFLYNAM0001: Activating Naming Subsystem
+2025-11-04 23:27:27,125 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-11-04 23:27:27,127 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-11-04 23:27:27,129 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-11-04 23:27:27,130 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.12.Final
+2025-11-04 23:27:27,141 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-11-04 23:27:27,160 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-11-04 23:27:27,159 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2025-11-04 23:27:27,163 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 77) WFLYWS0002: Activating WebServices Extension
+2025-11-04 23:27:27,202 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "flat_service.war" (runtime-name: "flat_service.war")
+2025-11-04 23:27:27,255 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.14.Final)
+2025-11-04 23:27:27,258 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2025-11-04 23:27:27,259 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-11-04 23:27:27,260 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-11-04 23:27:27,260 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.31.Final
+2025-11-04 23:27:27,262 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-11-04 23:27:27,331 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-11-04 23:27:27,405 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2025-11-04 23:27:27,405 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2025-11-04 23:27:27,418 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0014: Creating file handler for path '/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-11-04 23:27:27,420 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2025-11-04 23:27:27,421 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) Queuing requests.
+2025-11-04 23:27:27,422 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0018: Host default-host starting
+2025-11-04 23:27:27,542 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:23210
+2025-11-04 23:27:27,616 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-04 23:27:27,664 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:23211
+2025-11-04 23:27:27,704 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-9) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-11-04 23:27:27,710 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/deployments
+2025-11-04 23:27:27,842 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 7.3.3.Final (Apache CXF 4.0.9) 
+2025-11-04 23:27:31,253 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-7) WFLYSRV0018: Deployment "deployment.flat_service.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-11-04 23:27:31,325 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment flat_service.war
+2025-11-04 23:27:31,826 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.2.Final
+2025-11-04 23:27:32,217 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-4) Activating CDI extension for Spring Data JPA repositories
+2025-11-04 23:27:32,527 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-11-04 23:27:32,547 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 5.1.6 (Final)
+2025-11-04 23:27:32,610 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) WFLYJCA0018: Started Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-04 23:27:32,726 INFO  [org.jboss.weld.Event] (MSC service thread 1-5) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-11-04 23:27:33,033 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 92) 2 Spring WebApplicationInitializers detected on classpath
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92) 
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92)   .   ____          _            __ _ _
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92)   '  |____| .__|_| |_|_| |_\__, | / / / /
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92)  =========|_|==============|___/=/_/_/_/
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92) 
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92) [32m :: Spring Boot :: [39m              [2m (v3.5.6)[0;39m
+2025-11-04 23:27:33,267 INFO  [stdout] (ServerService Thread Pool -- 92) 
+2025-11-04 23:27:33,297 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 92) Starting FlatServiceApplication using Java 17.0.13 with PID 81408 (started by jaba in /Users/jaba/IdeaProjects/soa/locallol)
+2025-11-04 23:27:33,298 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 92) No active profile set, falling back to 1 default profile: "default"
+2025-11-04 23:27:33,565 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 92) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04 23:27:33,597 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 92) Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-11-04 23:27:33,761 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 92) Initializing Spring embedded WebApplicationContext
+2025-11-04 23:27:33,762 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 92) Root WebApplicationContext: initialization completed in 453 ms
+2025-11-04 23:27:33,916 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 92) HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04 23:27:33,940 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 92) HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-04 23:27:33,958 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 92) HHH000026: Second-level cache disabled
+2025-11-04 23:27:34,098 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] (ServerService Thread Pool -- 92) No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04 23:27:34,109 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (ServerService Thread Pool -- 92) HHH000490: Using JTA platform [org.springframework.boot.orm.jpa.hibernate.SpringJtaPlatform]
+2025-11-04 23:27:34,115 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 92) HikariPool-1 - Starting...
+2025-11-04 23:27:34,223 INFO  [com.zaxxer.hikari.pool.HikariPool] (ServerService Thread Pool -- 92) HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@474e6e01
+2025-11-04 23:27:34,224 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 92) HikariPool-1 - Start completed.
+2025-11-04 23:27:34,269 INFO  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 92) HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04 23:27:34,689 INFO  [stdout] (ServerService Thread Pool -- 92) Hibernate: set client_min_messages = WARNING
+2025-11-04 23:27:34,691 INFO  [stdout] (ServerService Thread Pool -- 92) Hibernate: drop table if exists flats cascade
+2025-11-04 23:27:34,729 INFO  [stdout] (ServerService Thread Pool -- 92) Hibernate: create table flats (area integer not null check (area>=1), coordinate_x integer not null check (coordinate_x<=324), coordinate_y integer not null check (coordinate_y<=832), creation_date date not null, house_floors integer check (house_floors>=1), id integer generated by default as identity check (id>=1), number_of_bathrooms integer not null check (number_of_bathrooms>=1), number_of_rooms integer not null check (number_of_rooms>=1), house_year bigint check (house_year>=1), furnish varchar(255) not null check (furnish in ('DESIGNER','NONE','BAD','LITTLE')), house_name varchar(255), name varchar(255) not null, transport varchar(255) check (transport in ('NONE','FEW','LITTLE','NORMAL')), primary key (id))
+2025-11-04 23:27:34,774 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 92) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 23:27:34,949 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:27:34,956 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] (ServerService Thread Pool -- 92) Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04 23:27:35,225 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:27:35,226 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:27:35,248 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:27:35,249 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:27:35,315 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] (ServerService Thread Pool -- 92) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 23:27:35,501 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 92) Started FlatServiceApplication in 2.405 seconds (process running for 9.917)
+2025-11-04 23:27:35,534 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 92) Initializing Mojarra 4.0.11 for context '/flat_service'
+2025-11-04 23:27:36,119 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0021: Registered web context: '/flat_service' for server 'default-server'
+2025-11-04 23:27:36,144 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "flat_service.war" (runtime-name : "flat_service.war")
+2025-11-04 23:27:36,163 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-11-04 23:27:36,165 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:23209/management
+2025-11-04 23:27:36,166 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:23209
+2025-11-04 23:27:36,166 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) started in 10581ms - Started 574 of 786 services (335 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-11-04 23:27:36,183 INFO  [io.undertow.servlet] (default task-2) Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 23:27:36,183 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Initializing Servlet 'dispatcherServlet'
+2025-11-04 23:27:36,184 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Completed initialization in 1 ms
+2025-11-04 23:27:36,258 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:27:36,293 INFO  [stdout] (default task-2) start sending: FlatStatResponse(id=null, flatId=1, numberOfRooms=2, price=null)
+2025-11-04 23:27:36,296 INFO  [stdout] (default task-2) Parsed json: {"flatId":1,"numberOfRooms":2} 
+2025-11-04 23:27:36,367 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 500
+2025-11-04 23:27:36,391 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    3864250 nanoseconds spent acquiring 1 JDBC connections;
+    12167 nanoseconds spent releasing 1 JDBC connections;
+    6605917 nanoseconds spent preparing 1 JDBC statements;
+    15548333 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2247917 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:27:42,063 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:27:42,099 INFO  [stdout] (default task-2) start sending: FlatStatResponse(id=null, flatId=2, numberOfRooms=2, price=null)
+2025-11-04 23:27:42,100 INFO  [stdout] (default task-2) Parsed json: {"flatId":2,"numberOfRooms":2} 
+2025-11-04 23:27:42,125 WARN  [soa.study.flat_service.service.PushService] (default task-2) Failed to push FlatStat: HTTP 500
+2025-11-04 23:27:42,130 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    4640458 nanoseconds spent acquiring 1 JDBC connections;
+    12833 nanoseconds spent releasing 1 JDBC connections;
+    4833958 nanoseconds spent preparing 1 JDBC statements;
+    27169125 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    339875 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:28:32,740 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-11-04 23:28:32,748 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-04 23:28:32,751 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-11-04 23:28:32,758 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-04 23:28:32,768 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-11-04 23:28:32,773 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0022: Unregistered web context: '/flat_service' from server 'default-server'
+2025-11-04 23:28:32,777 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 96) Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-11-04 23:28:32,778 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 96) Closing Spring root WebApplicationContext
+2025-11-04 23:28:32,785 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 96) Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 23:28:32,795 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 96) HikariPool-1 - Shutdown initiated...
+2025-11-04 23:28:32,798 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 96) HikariPool-1 - Shutdown completed.
+2025-11-04 23:28:32,823 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2025-11-04 23:28:32,833 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-11-04 23:28:32,835 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-11-04 23:28:32,844 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2025-11-04 23:28:32,845 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-11-04 23:28:32,845 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:23210
+2025-11-04 23:28:32,845 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:23211
+2025-11-04 23:28:32,846 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-11-04 23:28:32,891 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment flat_service.war (runtime-name: flat_service.war) in 133ms
+2025-11-04 23:28:32,897 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) stopped in 140ms
+2025-11-04 23:28:38,775 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.6.Final
+2025-11-04 23:28:39,016 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.6.Final
+2025-11-04 23:28:39,020 INFO  [org.jboss.threads] (main) JBoss Threads version 3.9.1
+2025-11-04 23:28:39,074 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) starting
+2025-11-04 23:28:39,075 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home
+	java.io.tmpdir = /var/folders/xv/slvr_rgd0t99dlbj0bdgpmq00000gn/T/
+	java.library.path = /Users/jaba/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.13+11-LTS
+	java.specification.maintenance.version = 1
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Amazon.com Inc.
+	java.vendor.url = https://aws.amazon.com/corretto/
+	java.vendor.url.bug = https://github.com/corretto/corretto-17/issues/
+	java.vendor.version = Corretto-17.0.13.11.1
+	java.version = 17.0.13
+	java.version.date = 2024-10-15
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Amazon.com Inc.
+	java.vm.version = 17.0.13+11-LTS
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final
+	jboss.host.name = macbookpro
+	jboss.http.port = 23210
+	jboss.https.port = 23211
+	jboss.management.http.port = 23209
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbookpro
+	jboss.qualified.host.name = macbookpro
+	jboss.server.base.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone
+	jboss.server.config.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration
+	jboss.server.data.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data
+	jboss.server.log.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log
+	jboss.server.name = macbookpro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/tmp
+	jboss.threads.eqe.statistics = true
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties
+	module.path = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 26.0.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Users/jaba/Library/Java/JavaVirtualMachines/corretto-17.0.13/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/jboss-modules.jar -mp /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final -Djboss.server.base.dir=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone -b 0.0.0.0 -Djboss.http.port=23210 -Djboss.https.port=23211 -Djboss.management.http.port=23209
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.stderr.encoding = UTF-8
+	sun.stdout.encoding = UTF-8
+	user.country = RU
+	user.dir = /Users/jaba/IdeaProjects/soa/locallol
+	user.home = /Users/jaba
+	user.language = ru
+	user.name = jaba
+	user.timezone = Europe/Moscow
+2025-11-04 23:28:39,076 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/configuration/logging.properties -Xmx1G 
+2025-11-04 23:28:39,411 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.4.Final
+2025-11-04 23:28:39,863 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 22) WFLYDR0001: Content added at location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/cf/b77801586058e075a9c6bbe6d17aa470705367/content
+2025-11-04 23:28:39,877 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-11-04 23:28:39,884 INFO  [org.xnio] (MSC service thread 1-9) XNIO version 3.8.16.Final
+2025-11-04 23:28:39,887 INFO  [org.xnio.nio] (MSC service thread 1-9) XNIO NIO Implementation Version 3.8.16.Final
+2025-11-04 23:28:39,898 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 54) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-11-04 23:28:39,901 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 58) WFLYRS0016: RESTEasy version 6.2.12.Final
+2025-11-04 23:28:39,902 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-11-04 23:28:39,902 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 66) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-11-04 23:28:39,903 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 75) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-11-04 23:28:39,904 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 55) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-11-04 23:28:39,906 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 57) WFLYIO001: Worker 'default' has auto-configured to 20 IO threads with 160 max task threads based on your 10 available processors
+2025-11-04 23:28:39,908 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 68) WFLYNAM0001: Activating Naming Subsystem
+2025-11-04 23:28:39,909 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.14.Final)
+2025-11-04 23:28:39,909 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 67) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-11-04 23:28:39,910 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 65) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-11-04 23:28:39,911 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 77) WFLYWS0002: Activating WebServices Extension
+2025-11-04 23:28:39,914 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 63) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-11-04 23:28:39,925 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 45) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-11-04 23:28:39,931 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "flat_service.war" (runtime-name: "flat_service.war")
+2025-11-04 23:28:39,934 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-11-04 23:28:39,937 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2025-11-04 23:28:39,941 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-11-04 23:28:39,957 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.31.Final
+2025-11-04 23:28:39,961 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-11-04 23:28:39,994 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 160 (per class), which is derived from thread worker pool sizing.
+2025-11-04 23:28:39,994 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 40 (per class), which is derived from the number of CPUs on this host.
+2025-11-04 23:28:39,995 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0014: Creating file handler for path '/Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-11-04 23:28:39,998 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2025-11-04 23:28:39,999 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) Queuing requests.
+2025-11-04 23:28:39,999 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2025-11-04 23:28:40,020 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:23210
+2025-11-04 23:28:40,027 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-04 23:28:40,047 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/deployments
+2025-11-04 23:28:40,049 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-11-04 23:28:40,058 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:23211
+2025-11-04 23:28:40,109 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 7.3.3.Final (Apache CXF 4.0.9) 
+2025-11-04 23:28:42,950 WARN  [org.jboss.as.dependency.private] (MSC service thread 1-3) WFLYSRV0018: Deployment "deployment.flat_service.war" is using a private module ("org.jboss.vfs") which may be changed or removed in future versions without notice.
+2025-11-04 23:28:42,977 INFO  [org.jboss.weld.deployer] (MSC service thread 1-9) WFLYWELD0003: Processing weld deployment flat_service.war
+2025-11-04 23:28:43,114 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-9) HV000001: Hibernate Validator 8.0.2.Final
+2025-11-04 23:28:43,188 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-9) Activating CDI extension for Spring Data JPA repositories
+2025-11-04 23:28:43,322 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-11-04 23:28:43,336 INFO  [org.jboss.weld.Version] (MSC service thread 1-9) WELD-000900: 5.1.6 (Final)
+2025-11-04 23:28:43,365 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-04 23:28:43,455 INFO  [org.jboss.weld.Event] (MSC service thread 1-4) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2025-11-04 23:28:43,713 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 92) 2 Spring WebApplicationInitializers detected on classpath
+2025-11-04 23:28:43,893 INFO  [stdout] (ServerService Thread Pool -- 92) 
+2025-11-04 23:28:43,893 INFO  [stdout] (ServerService Thread Pool -- 92)   .   ____          _            __ _ _
+2025-11-04 23:28:43,893 INFO  [stdout] (ServerService Thread Pool -- 92)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2025-11-04 23:28:43,893 INFO  [stdout] (ServerService Thread Pool -- 92) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2025-11-04 23:28:43,893 INFO  [stdout] (ServerService Thread Pool -- 92)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2025-11-04 23:28:43,894 INFO  [stdout] (ServerService Thread Pool -- 92)   '  |____| .__|_| |_|_| |_\__, | / / / /
+2025-11-04 23:28:43,894 INFO  [stdout] (ServerService Thread Pool -- 92)  =========|_|==============|___/=/_/_/_/
+2025-11-04 23:28:43,894 INFO  [stdout] (ServerService Thread Pool -- 92) 
+2025-11-04 23:28:43,894 INFO  [stdout] (ServerService Thread Pool -- 92) [32m :: Spring Boot :: [39m              [2m (v3.5.6)[0;39m
+2025-11-04 23:28:43,894 INFO  [stdout] (ServerService Thread Pool -- 92) 
+2025-11-04 23:28:43,925 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 92) Starting FlatServiceApplication using Java 17.0.13 with PID 81643 (started by jaba in /Users/jaba/IdeaProjects/soa/locallol)
+2025-11-04 23:28:43,925 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 92) No active profile set, falling back to 1 default profile: "default"
+2025-11-04 23:28:44,183 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 92) Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04 23:28:44,214 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] (ServerService Thread Pool -- 92) Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-11-04 23:28:44,364 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 92) Initializing Spring embedded WebApplicationContext
+2025-11-04 23:28:44,365 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 92) Root WebApplicationContext: initialization completed in 431 ms
+2025-11-04 23:28:44,508 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 92) HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04 23:28:44,531 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 92) HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-04 23:28:44,549 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] (ServerService Thread Pool -- 92) HHH000026: Second-level cache disabled
+2025-11-04 23:28:44,683 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] (ServerService Thread Pool -- 92) No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04 23:28:44,694 INFO  [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] (ServerService Thread Pool -- 92) HHH000490: Using JTA platform [org.springframework.boot.orm.jpa.hibernate.SpringJtaPlatform]
+2025-11-04 23:28:44,699 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 92) HikariPool-1 - Starting...
+2025-11-04 23:28:44,838 INFO  [com.zaxxer.hikari.pool.HikariPool] (ServerService Thread Pool -- 92) HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23db236c
+2025-11-04 23:28:44,843 INFO  [com.zaxxer.hikari.HikariDataSource] (ServerService Thread Pool -- 92) HikariPool-1 - Start completed.
+2025-11-04 23:28:44,887 INFO  [org.hibernate.orm.connections.pooling] (ServerService Thread Pool -- 92) HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04 23:28:45,285 INFO  [stdout] (ServerService Thread Pool -- 92) Hibernate: set client_min_messages = WARNING
+2025-11-04 23:28:45,286 INFO  [stdout] (ServerService Thread Pool -- 92) Hibernate: drop table if exists flats cascade
+2025-11-04 23:28:45,308 INFO  [stdout] (ServerService Thread Pool -- 92) Hibernate: create table flats (area integer not null check (area>=1), coordinate_x integer not null check (coordinate_x<=324), coordinate_y integer not null check (coordinate_y<=832), creation_date date not null, house_floors integer check (house_floors>=1), id integer generated by default as identity check (id>=1), number_of_bathrooms integer not null check (number_of_bathrooms>=1), number_of_rooms integer not null check (number_of_rooms>=1), house_year bigint check (house_year>=1), furnish varchar(255) not null check (furnish in ('DESIGNER','NONE','BAD','LITTLE')), house_name varchar(255), name varchar(255) not null, transport varchar(255) check (transport in ('NONE','FEW','LITTLE','NORMAL')), primary key (id))
+2025-11-04 23:28:45,333 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] (ServerService Thread Pool -- 92) Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04 23:28:45,475 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:28:45,501 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:28:45,504 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] (ServerService Thread Pool -- 92) Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04 23:28:45,708 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:28:45,709 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:28:45,756 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (ServerService Thread Pool -- 92) Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:28:45,801 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] (ServerService Thread Pool -- 92) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 23:28:45,964 INFO  [soa.study.flat_service.FlatServiceApplication] (ServerService Thread Pool -- 92) Started FlatServiceApplication in 2.221 seconds (process running for 7.369)
+2025-11-04 23:28:45,990 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 92) Initializing Mojarra 4.0.11 for context '/flat_service'
+2025-11-04 23:28:46,352 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 92) WFLYUT0021: Registered web context: '/flat_service' for server 'default-server'
+2025-11-04 23:28:46,371 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 46) WFLYSRV0010: Deployed "flat_service.war" (runtime-name : "flat_service.war")
+2025-11-04 23:28:46,390 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-11-04 23:28:46,393 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:23209/management
+2025-11-04 23:28:46,393 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:23209
+2025-11-04 23:28:46,394 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) started in 7796ms - Started 574 of 786 services (335 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-11-04 23:28:49,444 INFO  [io.undertow.servlet] (default task-2) Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 23:28:49,445 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Initializing Servlet 'dispatcherServlet'
+2025-11-04 23:28:49,447 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-2) Completed initialization in 2 ms
+2025-11-04 23:28:49,578 INFO  [stdout] (default task-2) Hibernate: insert into flats (area,coordinate_x,coordinate_y,creation_date,furnish,house_name,house_floors,house_year,name,number_of_bathrooms,number_of_rooms,transport) values (?,?,?,?,?,?,?,?,?,?,?,?)
+2025-11-04 23:28:49,632 INFO  [stdout] (default task-2) start sending: FlatStatResponse(id=null, flatId=1, numberOfRooms=2, price=null)
+2025-11-04 23:28:49,636 INFO  [stdout] (default task-2) Parsed json: {"flat_id":1,"number_of_rooms":2} 
+2025-11-04 23:28:49,963 INFO  [soa.study.flat_service.service.PushService] (default task-2) FlatStat отправлен на агентство: 1
+2025-11-04 23:28:49,994 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    4808125 nanoseconds spent acquiring 1 JDBC connections;
+    12750 nanoseconds spent releasing 1 JDBC connections;
+    7624292 nanoseconds spent preparing 1 JDBC statements;
+    32932583 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3096709 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 pre-partial-flushes;
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:38:39,236 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/80/70c56b5aa586942e8c01e9350ff5c53a264529 is obsolete and will be removed
+2025-11-04 23:38:39,261 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/80/70c56b5aa586942e8c01e9350ff5c53a264529/content
+2025-11-04 23:38:39,261 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/ba/bd4480820a087b6fcb5e80c7e8ea23a27275de is obsolete and will be removed
+2025-11-04 23:38:39,275 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/ba/bd4480820a087b6fcb5e80c7e8ea23a27275de/content
+2025-11-04 23:38:39,278 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/a1/5ce4b9726157816a9986734896d948c3a5624e is obsolete and will be removed
+2025-11-04 23:38:39,290 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/a1/5ce4b9726157816a9986734896d948c3a5624e/content
+2025-11-04 23:38:39,290 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/e6/396de0ac9718fe0aafd593c040622ef57e5987 is obsolete and will be removed
+2025-11-04 23:38:39,299 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/e6/396de0ac9718fe0aafd593c040622ef57e5987/content
+2025-11-04 23:38:39,299 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/90/9212bb03ceddfc78a88ec88876158c9d6921d1 is obsolete and will be removed
+2025-11-04 23:38:39,306 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/90/9212bb03ceddfc78a88ec88876158c9d6921d1/content
+2025-11-04 23:38:39,306 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/aa/c0363903a38b8037bb5daa2a46320a942ce85e is obsolete and will be removed
+2025-11-04 23:38:39,315 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/aa/c0363903a38b8037bb5daa2a46320a942ce85e/content
+2025-11-04 23:46:26,749 INFO  [stdout] (default task-2) Hibernate: select f1_0.id,f1_0.area,f1_0.coordinate_x,f1_0.coordinate_y,f1_0.creation_date,f1_0.furnish,f1_0.house_name,f1_0.house_floors,f1_0.house_year,f1_0.name,f1_0.number_of_bathrooms,f1_0.number_of_rooms,f1_0.transport from flats f1_0 where 1=1 offset ? rows fetch first ? rows only
+2025-11-04 23:46:26,788 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-2) Session Metrics {
+    2038708 nanoseconds spent acquiring 1 JDBC connections;
+    13500 nanoseconds spent releasing 1 JDBC connections;
+    2339167 nanoseconds spent preparing 1 JDBC statements;
+    5293625 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    24750 nanoseconds spent executing 1 pre-partial-flushes;
+    4792 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:46:26,800 INFO  [stdout] (default task-3) Hibernate: select f1_0.id,f1_0.area,f1_0.coordinate_x,f1_0.coordinate_y,f1_0.creation_date,f1_0.furnish,f1_0.house_name,f1_0.house_floors,f1_0.house_year,f1_0.name,f1_0.number_of_bathrooms,f1_0.number_of_rooms,f1_0.transport from flats f1_0 where 1=1 offset ? rows fetch first ? rows only
+2025-11-04 23:46:26,819 INFO  [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener] (default task-3) Session Metrics {
+    86667 nanoseconds spent acquiring 1 JDBC connections;
+    9125 nanoseconds spent releasing 1 JDBC connections;
+    329791 nanoseconds spent preparing 1 JDBC statements;
+    1300417 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    2334 nanoseconds spent executing 1 pre-partial-flushes;
+    1166 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-11-04 23:47:18,371 WARN  [com.zaxxer.hikari.pool.HikariPool] (HikariPool-1:housekeeper) HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s266ms).

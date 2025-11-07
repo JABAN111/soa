@@ -1,0 +1,21 @@
+2025-11-06 00:03:29,298 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/8e/ef875cf4390540eeafe8db11fef9cefcb62f54 is obsolete and will be removed
+2025-11-06 00:03:29,360 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/8e/ef875cf4390540eeafe8db11fef9cefcb62f54/content
+2025-11-06 00:03:29,360 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/24/8f23674133b9c4ec100786dc005eb79299c542 is obsolete and will be removed
+2025-11-06 00:03:29,372 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/24/8f23674133b9c4ec100786dc005eb79299c542/content
+2025-11-06 00:03:29,372 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0009: Content /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/79/35f0ac652a00cc22a731c81da20bbd0a53f871 is obsolete and will be removed
+2025-11-06 00:03:29,385 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 2) WFLYDR0002: Content removed from location /Users/jaba/IdeaProjects/soa/locallol/wildfly-37.0.1.Final/standalone/data/content/79/35f0ac652a00cc22a731c81da20bbd0a53f871/content
+2025-11-06 12:07:59,559 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0272: Suspending server
+2025-11-06 12:07:59,725 INFO  [org.jboss.as.ejb3] (Thread-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-11-06 12:07:59,740 INFO  [org.jboss.as.server] (Thread-1) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2025-11-06 12:07:59,785 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) WFLYJCA0019: Stopped Driver service with driver-name = flat_service.war_org.postgresql.Driver_42_7
+2025-11-06 12:07:59,812 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-11-06 12:07:59,826 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2025-11-06 12:07:59,847 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-11-06 12:07:59,851 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-11-06 12:07:59,877 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2025-11-06 12:07:59,877 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-11-06 12:07:59,879 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:23211
+2025-11-06 12:07:59,879 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:23210
+2025-11-06 12:07:59,880 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-11-06 12:07:59,952 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment flat_service.war (runtime-name: flat_service.war) in 167ms
+2025-11-06 12:07:59,959 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly 37.0.1.Final (WildFly Core 29.0.1.Final) stopped in 176ms
