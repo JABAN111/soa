@@ -59,70 +59,72 @@ func TestGetAllFlat(t *testing.T) {
 }
 
 func TestCreateFlat(t *testing.T) {
-	testCases := []struct {
-		testName    string
-		flat        Flat
-		expectError bool
-		expectCode  int
-	}{
-		{
-			testName: "Simple creating",
-			flat: Flat{
-				Name: "simple flat",
-				Coordinates: struct {
-					X int `json:"x"`
-					Y int `json:"y"`
-				}{
-					X: 1,
-					Y: 2,
+	for range 10 {
+		testCases := []struct {
+			testName    string
+			flat        Flat
+			expectError bool
+			expectCode  int
+		}{
+			{
+				testName: "Simple creating",
+				flat: Flat{
+					Name: "simple flat",
+					Coordinates: struct {
+						X int `json:"x"`
+						Y int `json:"y"`
+					}{
+						X: 1,
+						Y: 2,
+					},
+					Area:              252,
+					NumberOfRooms:     2,
+					NumberOfBathrooms: 321,
+					Furnish:           "LITTLE",
+					Transport:         "FEW",
 				},
-				Area:              252,
-				NumberOfRooms:     2,
-				NumberOfBathrooms: 321,
-				Furnish:           "LITTLE",
-				Transport:         "FEW",
+				expectError: false,
+				expectCode:  http.StatusCreated,
 			},
-			expectError: false,
-			expectCode:  http.StatusCreated,
-		},
-		{
-			testName: "Missing coordinates",
-			flat: Flat{
-				Name:              "simple flat",
-				Area:              252,
-				NumberOfRooms:     2,
-				NumberOfBathrooms: 321,
-				Furnish:           "LITTLE",
-				Transport:         "FEW",
+			{
+				testName: "Missing coordinates",
+				flat: Flat{
+					Name:              "simple flat",
+					Area:              252,
+					NumberOfRooms:     2,
+					NumberOfBathrooms: 321,
+					Furnish:           "LITTLE",
+					Transport:         "FEW",
+				},
+				expectError: false,
+				expectCode:  http.StatusCreated,
 			},
-			expectError: false,
-			expectCode:  http.StatusCreated,
-		},
-	}
-	for _, tc := range testCases {
-		t.Run(tc.testName, func(t *testing.T) {
-			httpCl := util.GetHttpClient()
+		}
+		for _, tc := range testCases {
+			t.Run(tc.testName, func(t *testing.T) {
+				httpCl := util.GetHttpClient()
 
-			body, err := json.Marshal(tc.flat)
-			require.NoError(t, err)
-
-			req, err := http.NewRequest("POST", createFlat, bytes.NewReader(body))
-			require.NoError(t, err)
-			req.Header.Add("Content-Type", "application/json")
-			resp, err := httpCl.Do(req)
-			if tc.expectError {
-				data, err := io.ReadAll(resp.Body)
+				body, err := json.Marshal(tc.flat)
 				require.NoError(t, err)
-				t.Logf("response: %s", string(data))
-				require.Truef(t, resp.StatusCode >= 400 || resp.StatusCode < 500, "Response status code: %v", resp.StatusCode)
-				return
-			}
-			require.NoError(t, err)
 
-			var message bytes.Buffer
-			_, err = message.ReadFrom(resp.Body)
-			require.NoError(t, err)
-			require.Equal(t, tc.expectCode, resp.StatusCode, message.String())
-		})
+				req, err := http.NewRequest("POST", createFlat, bytes.NewReader(body))
+				require.NoError(t, err)
+				req.Header.Add("Content-Type", "application/json")
+				resp, err := httpCl.Do(req)
+				if tc.expectError {
+					data, err := io.ReadAll(resp.Body)
+					require.NoError(t, err)
+					t.Logf("response: %s", string(data))
+					require.Truef(t, resp.StatusCode >= 400 || resp.StatusCode < 500, "Response status code: %v", resp.StatusCode)
+					return
+				}
+				require.NoError(t, err)
+
+				var message bytes.Buffer
+				_, err = message.ReadFrom(resp.Body)
+				require.NoError(t, err)
+				require.Equal(t, tc.expectCode, resp.StatusCode, message.String())
+			})
+		}
 	}
 }

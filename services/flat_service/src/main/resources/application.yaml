@@ -9,7 +9,7 @@ spring:
   application.name:
     flat_service
   datasource:
-    url: jdbc:postgresql://localhost:5432/studs
+    url: jdbc:postgresql://localhost:23455/studs
     username: s368601
     password: ${DB_PASSWORD:kIRfXLhf95PZkxZ6}
     driver-class-name: org.postgresql.Driver

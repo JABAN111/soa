@@ -35,6 +35,7 @@ public class FlatService {
         var flats = flatStatRepository.findAll();
         for (FlatStat flat : flats) {
             sum += flat.getNumberOfRooms() * 9000d;
+            System.out.println("current sum: " + sum);
         }
         return sum;
     }

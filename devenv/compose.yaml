@@ -5,7 +5,7 @@ services:
     container_name: agency_db
     restart: unless-stopped
     ports:
-      - "23455:23455"
+      - "23455:5432"
     environment:
       POSTGRES_PASSWORD: kIRfXLhf95PZkxZ6
       POSTGRES_USER: s368601
